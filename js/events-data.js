@@ -1,0 +1,73 @@
+export const EVENTS = [
+  {
+    name: "Cosmic Deli",
+    slug: "cosmic-deli",
+    type: "technical",
+    image: "/images/work-items/work-item-1.jpg",
+    registerUrl: "#",
+    rulebookUrl: "#",
+  },
+  {
+    name: "Skull Pop 7",
+    slug: "skull-pop-7",
+    type: "technical",
+    image: "/images/work-items/work-item-2.jpg",
+    registerUrl: "#",
+    rulebookUrl: "#",
+  },
+  {
+    name: "Room 404",
+    slug: "room-404",
+    type: "fun",
+    image: "/images/work-items/work-item-3.jpg",
+    registerUrl: "#",
+    rulebookUrl: "#",
+  },
+  {
+    name: "Red Dot Mission",
+    slug: "red-dot-mission",
+    type: "fun",
+    image: "/images/work-items/work-item-4.jpg",
+    registerUrl: "#",
+    rulebookUrl: "#",
+  },
+  {
+    name: "Sweetbones",
+    slug: "sweetbones",
+    type: "literary",
+    image: "/images/work-items/work-item-5.jpg",
+    registerUrl: "#",
+    rulebookUrl: "#",
+  },
+  {
+    name: "Carnival Bloom 31",
+    slug: "carnival-bloom-31",
+    type: "literary",
+    image: "/images/work-items/work-item-6.jpg",
+    registerUrl: "#",
+    rulebookUrl: "#",
+  },
+  {
+    name: "Soft Noise",
+    slug: "soft-noise",
+    type: "cultural",
+    image: "/images/work-items/work-item-7.jpg",
+    registerUrl: "#",
+    rulebookUrl: "#",
+  },
+  {
+    name: "Cloud Valley Echo",
+    slug: "cloud-valley-echo",
+    type: "cultural",
+    image: "/images/work-items/work-item-8.jpg",
+    registerUrl: "#",
+    rulebookUrl: "#",
+  },
+];
+
+export const EVENT_TYPES = [
+  { key: "technical", label: "Technical Events" },
+  { key: "fun", label: "Fun Events" },
+  { key: "literary", label: "Literary Events" },
+  { key: "cultural", label: "Cultural Events" },
+];
