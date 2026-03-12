@@ -67,13 +67,14 @@
 }
 
 .work-items .row {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 2em;
 }
 
 .work-items .row .work-item {
   position: relative;
-  flex: 1;
+  min-width: 0;
 }
 
 .work-items .row .work-item .work-item-img {
@@ -116,6 +117,6 @@
   }
 
   .work-items .row {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 }

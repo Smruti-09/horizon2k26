@@ -5,13 +5,12 @@ import lottie from "lottie-web";
 gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener("DOMContentLoaded", () => {
-  const aboutSection = document.querySelector(".lottie-about-section");
   const heroSection = document.querySelector(".lottie-hero-section");
   const lottieContainer = document.querySelector(".lottie-duck");
   const heroImg = document.querySelector(".lottie-hero-img");
   const fixedContainer = document.querySelector(".lottie-fixed-container");
 
-  if (!aboutSection || !heroSection || !lottieContainer || !heroImg || !fixedContainer) return;
+  if (!heroSection || !lottieContainer || !heroImg || !fixedContainer) return;
 
   const lottieAnimation = lottie.loadAnimation({
     container: lottieContainer,
@@ -28,9 +27,8 @@ document.addEventListener("DOMContentLoaded", () => {
     lastScrollY = window.scrollY;
   });
 
-  // Show fixed container when about section enters, hide after hero section leaves
   ScrollTrigger.create({
-    trigger: aboutSection,
+    trigger: heroSection,
     start: "top 80%",
     onEnter: () => gsap.to(fixedContainer, { opacity: 1, duration: 0.3 }),
     onLeaveBack: () => gsap.to(fixedContainer, { opacity: 0, duration: 0.3 }),
@@ -79,9 +77,9 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
-  // Animate duck frames — walk animation driven by scroll through about section
+  // Animate duck frames across the full animation section.
   ScrollTrigger.create({
-    trigger: aboutSection,
+    trigger: heroSection,
     start: "top top",
     end: "bottom top",
     scrub: 1,
