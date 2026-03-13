@@ -24,7 +24,7 @@
 
 .hero .hero-header.hero-header-2 {
   position: relative;
-  transform: translateX(20%);
+  transform: translateX(50%);
   z-index: 2;
 }
 
@@ -252,11 +252,11 @@
   }
 
   .hero .hero-header.hero-header-1 {
-    transform: translateX(-10%);
+    transform: translateX(-5%) translateY(-130%);
   }
 
   .hero .hero-header.hero-header-2 {
-    transform: translateX(10%);
+    transform: translateX(50%) translateY(-100%);
   }
 
   .hero .hero-footer .hero-footer-symbols {
@@ -274,30 +274,32 @@
   }
 
   .featured-work {
-    padding: 4em 0;
+    padding: 0;
+    height: 100svh;
+    overflow: hidden;
   }
 
   .featured-work,
   .featured-work .featured-titles {
-    height: max-content;
+    height: 100svh;
   }
 
   .featured-work .featured-title-wrapper {
-    gap: 1em;
+    gap: 0;
   }
 
   .featured-work .featured-title-wrapper:nth-child(1) {
-    margin-bottom: 2em;
+    margin-bottom: 0;
   }
 
   .featured-work .featured-title-wrapper h1 {
     transform: translateY(0);
-    width: 75%;
+    width: 85%;
   }
 
   .featured-work .featured-work-footer {
-    position: relative;
-    margin-top: 4em;
+    position: absolute;
+    margin-top: 0;
     justify-content: center;
   }
 
@@ -311,17 +313,19 @@
   }
 
   .featured-work .featured-images {
-    display: none;
+    display: block;
+    width: 250vw;
+    height: 175vh;
   }
 
   .featured-title-img {
-    display: block;
+    display: none;
   }
 
   .featured-work .featured-titles {
-    width: 100vw;
-    flex-direction: column;
-    gap: 2em;
+    width: 500vw;
+    flex-direction: row;
+    gap: 0;
   }
 
   .services-header {
@@ -464,14 +468,19 @@
 }
 
 @media (max-width: 1000px) {
+  .lottie-fixed-container {
+    padding: 1em;
+  }
+
   .lottie-fixed-container .lottie-duck {
-    width: 4rem;
-    height: 4rem;
-    transform: translateX(1rem);
+    width: 5.5rem;
+    height: 5.5rem;
+    transform: translateX(0);
   }
 
   .lottie-fixed-container .lottie-hero-img {
-    width: 100%;
+    width: min(92vw, 560px);
+    border-radius: 1.25em;
   }
 }
 

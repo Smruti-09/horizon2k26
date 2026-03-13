@@ -7,24 +7,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
   gsap.registerPlugin(ScrollTrigger);
 
-  let scrollTriggerInstance = null;
+  let scrollTriggerInstances = [];
+
+  const cleanupTriggers = () => {
+    scrollTriggerInstances.forEach((instance) => {
+      if (instance) instance.kill();
+    });
+    scrollTriggerInstances = [];
+  };
 
   const initAnimations = () => {
-    if (window.innerWidth <= 1000) {
-      if (scrollTriggerInstance) {
-        scrollTriggerInstance.kill();
-        scrollTriggerInstance = null;
-      }
-      return;
-    }
-
-    if (scrollTriggerInstance) {
-      scrollTriggerInstance.kill();
-    }
+    cleanupTriggers();
 
     const indicatorContainer = document.querySelector(
       ".featured-work-indicator"
     );
+    const featuredTitles = document.querySelector(".featured-titles");
+    const imagesContainer = document.querySelector(".featured-images");
+
+    if (!indicatorContainer || !featuredTitles || !imagesContainer) return;
+    const isMobile = window.innerWidth <= 1000;
 
     indicatorContainer.innerHTML = "";
 
@@ -67,13 +69,27 @@ document.addEventListener("DOMContentLoaded", () => {
       { y: 500, x: 4500 },
     ];
 
+    const featuredCardPosMobile = [
+      { y: 60, x: 260 },
+      { y: 580, x: 40 },
+      { y: 180, x: 520 },
+      { y: 760, x: 300 },
+      { y: 100, x: 700 },
+      { y: 260, x: 120 },
+      { y: 700, x: 610 },
+      { y: 860, x: 220 },
+      { y: 480, x: 820 },
+      { y: 40, x: 420 },
+    ];
+
     const featuredCardPos =
-      window.innerWidth >= 1600 ? featuredCardPosLarge : featuredCardPosSmall;
+      window.innerWidth >= 1600
+        ? featuredCardPosLarge
+        : isMobile
+        ? featuredCardPosMobile
+        : featuredCardPosSmall;
 
-    const featuredTitles = document.querySelector(".featured-titles");
-    const moveDistance = window.innerWidth * 4;
-
-    const imagesContainer = document.querySelector(".featured-images");
+    const moveDistance = window.innerWidth * (isMobile ? 3.2 : 4);
 
     imagesContainer.innerHTML = "";
 
@@ -99,15 +115,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const featuredImgCards = document.querySelectorAll(".featured-img-card");
     featuredImgCards.forEach((featuredImgCard, index) => {
       gsap.set(featuredImgCard, {
-        z: -1500,
+        z: isMobile ? -1100 : -1500,
         scale: 0,
       });
     });
 
-    scrollTriggerInstance = ScrollTrigger.create({
+    const desktopTrigger = ScrollTrigger.create({
       trigger: ".featured-work",
       start: "top top",
-      end: `+=${window.innerHeight * 5}px`,
+      end: `+=${window.innerHeight * (isMobile ? 3.8 : 5)}px`,
       pin: true,
       scrub: 1,
       onUpdate: (self) => {
@@ -120,7 +136,8 @@ document.addEventListener("DOMContentLoaded", () => {
           const staggerOffset = index * 0.075;
           const scaledProgress = (self.progress - staggerOffset) * 2;
           const individualProgress = Math.max(0, Math.min(1, scaledProgress));
-          const newZ = -1500 + (1500 + 1500) * individualProgress;
+          const minZ = isMobile ? -1100 : -1500;
+          const newZ = minZ + (1500 - minZ) * individualProgress;
           const scaleProgress = Math.min(1, individualProgress * 10);
           const scale = Math.max(0, Math.min(1, scaleProgress));
 
@@ -145,6 +162,8 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       },
     });
+
+    scrollTriggerInstances.push(desktopTrigger);
   };
 
   initAnimations();

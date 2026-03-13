@@ -41,24 +41,40 @@ document.addEventListener("DOMContentLoaded", () => {
     onLeaveBack: () => gsap.to(fixedContainer, { opacity: 1, duration: 0.3 }),
   });
 
-  // Shrink hero image as hero section scrolls in
-  const heroImgInitialWidth = heroImg.offsetWidth;
-  const heroImgTargetWidth = 300;
-
   ScrollTrigger.create({
     trigger: heroSection,
     start: "top bottom",
-    end: "top 30%",
+    end: "top 25%",
     scrub: 1,
     onUpdate: (self) => {
+      const isMobile = window.innerWidth <= 1000;
+      const heroImgInitialWidth = isMobile
+        ? window.innerWidth * 0.92
+        : window.innerWidth * 0.65;
+      const heroImgTargetWidth = isMobile
+        ? Math.max(window.innerWidth * 0.52, 170)
+        : 300;
+      const pushDistance = isMobile
+        ? window.innerWidth * 0.2
+        : window.innerWidth * 0.12;
+      const duckPushDistance = isMobile
+        ? -window.innerWidth * 0.12
+        : -window.innerWidth * 0.08;
+
       const currentWidth =
         heroImgInitialWidth -
         self.progress * (heroImgInitialWidth - heroImgTargetWidth);
-      gsap.set(heroImg, { width: `${currentWidth}px` });
+
+      gsap.set(heroImg, {
+        width: `${currentWidth}px`,
+        x: -pushDistance * self.progress,
+      });
+
+      gsap.set(lottieContainer, {
+        x: duckPushDistance * self.progress,
+      });
     },
   });
-
-  let isAnimationPaused = false;
 
   // Move duck up as hero section scrolls past 30%
   ScrollTrigger.create({
@@ -67,8 +83,9 @@ document.addEventListener("DOMContentLoaded", () => {
     end: "bottom top",
     scrub: 1,
     onUpdate: (self) => {
-      const lottieOffset = self.progress * window.innerHeight * 1.1;
-      isAnimationPaused = self.progress > 0;
+      const isMobile = window.innerWidth <= 1000;
+      const lottieOffset =
+        self.progress * window.innerHeight * (isMobile ? 0.78 : 1.1);
 
       gsap.set(lottieContainer, {
         y: -lottieOffset,
@@ -84,14 +101,12 @@ document.addEventListener("DOMContentLoaded", () => {
     end: "bottom top",
     scrub: 1,
     onUpdate: (self) => {
-      if (!isAnimationPaused) {
-        const scrollDistance = self.scroll() - self.start;
-        const pixelsPerFrame = 3;
-        const frame =
-          Math.floor(scrollDistance / pixelsPerFrame) %
-          (lottieAnimation.totalFrames || 1);
-        lottieAnimation.goToAndStop(frame, true);
-      }
+      const scrollDistance = self.scroll() - self.start;
+      const pixelsPerFrame = window.innerWidth <= 1000 ? 2.5 : 3;
+      const frame =
+        Math.floor(scrollDistance / pixelsPerFrame) %
+        (lottieAnimation.totalFrames || 1);
+      lottieAnimation.goToAndStop(frame, true);
 
       gsap.set(lottieContainer, {
         rotateY: scrollDirection === "up" ? -180 : 0,
