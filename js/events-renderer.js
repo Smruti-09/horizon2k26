@@ -46,20 +46,15 @@ function renderEvents() {
 
       const buttons = document.createElement("div");
       buttons.className = "event-buttons";
-      buttons.style.cssText = "display:flex;gap:0.75em;margin-top:0.75em;";
 
       const regBtn = document.createElement("a");
       regBtn.href = event.registerUrl;
-      regBtn.className = "event-btn";
-      regBtn.style.cssText =
-        "padding:0.5em 1.25em;background:var(--fg);color:var(--bg);font-family:'supply-mono';font-size:0.75rem;text-transform:uppercase;border-radius:50px;text-decoration:none;";
+      regBtn.className = "event-btn event-btn-register";
       regBtn.textContent = "Register";
 
       const ruleBtn = document.createElement("a");
       ruleBtn.href = event.rulebookUrl;
-      ruleBtn.className = "event-btn";
-      ruleBtn.style.cssText =
-        "padding:0.5em 1.25em;border:2px solid var(--fg);color:var(--fg);font-family:'supply-mono';font-size:0.75rem;text-transform:uppercase;border-radius:50px;text-decoration:none;";
+      ruleBtn.className = "event-btn event-btn-rulebook";
       ruleBtn.textContent = "Rulebook";
 
       buttons.appendChild(regBtn);
