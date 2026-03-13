@@ -1,0 +1,249 @@
+/* ─── lineup page ──────────────────────────────── */
+
+/* hero */
+.lineup-hero {
+  position: relative;
+  width: 100vw;
+  min-height: 55vh;
+  padding: 9em 2em 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+  overflow: hidden;
+}
+
+.lineup-hero-tag {
+  display: inline-block;
+  width: fit-content;
+  background: #f5d743;
+  color: var(--fg);
+  padding: 0.3em 1em;
+  border: 1.5px solid rgba(20, 20, 20, 0.4);
+  border-radius: 50px;
+  margin-bottom: 0.25em;
+}
+
+.lineup-hero-title h1 {
+  font-size: clamp(4rem, 11vw, 9rem);
+  line-height: 0.92;
+}
+
+.lineup-hero-sub {
+  font-family: "supply-mono";
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  opacity: 0.5;
+  margin-top: 0.25em;
+}
+
+/* ─── drum selector section ─── */
+
+.lineup-selector-section {
+  width: 100vw;
+  padding: 0 2em 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+/* outer frame — slot-machine chassis */
+.lineup-drum-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  border: 0.22em solid var(--fg);
+  border-radius: 1.5em;
+  overflow: hidden;
+  /* top & bottom shade bars for slot-machine depth */
+  box-shadow:
+    inset 0 0 0 0px transparent,
+    0 8px 32px rgba(0, 0, 0, 0.14);
+}
+
+/* top & bottom "window edge" lines */
+.lineup-drum-wrapper::before,
+.lineup-drum-wrapper::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--fg);
+  z-index: 20;
+  pointer-events: none;
+}
+.lineup-drum-wrapper::before { top: 0; }
+.lineup-drum-wrapper::after  { bottom: 0; }
+
+/* decorative metal rivets at corners */
+.drum-rivet {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: var(--fg);
+  border-radius: 50%;
+  z-index: 25;
+}
+.drum-rivet-tl { top: 0.6em;  left: 0.75em;  }
+.drum-rivet-tr { top: 0.6em;  right: 0.75em; }
+.drum-rivet-bl { bottom: 0.6em; left: 0.75em;  }
+.drum-rivet-br { bottom: 0.6em; right: 0.75em; }
+
+/* the visible window the drum shows through */
+.drum-viewport {
+  height: 160px;
+  overflow: hidden;
+  perspective: 900px;
+  perspective-origin: 50% 50%;
+  position: relative;
+}
+
+/* top + bottom shadow inside viewport = depth illusion */
+.drum-viewport::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.32) 0%,
+    transparent 30%,
+    transparent 70%,
+    rgba(0, 0, 0, 0.32) 100%
+  );
+  z-index: 15;
+  pointer-events: none;
+}
+
+/* 3-D barrel — 4-sided prism */
+.drum-barrel {
+  width: 100%;
+  height: 160px;
+  position: relative;
+  transform-style: preserve-3d;
+  /* starts showing face-0 */
+}
+
+/* each face of the prism */
+.drum-face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85em;
+  backface-visibility: hidden;
+  user-select: none;
+  padding: 0 2em;
+}
+
+.drum-face-text {
+  font-family: "carnivalee", "rader";
+  font-size: clamp(2.2rem, 6vw, 4.75rem);
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.drum-face-icon {
+  font-size: clamp(1.5rem, 3.5vw, 2.4rem);
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+/* ── face positions around the 4-sided prism ──
+   radius r = face_height / (2 * tan(π/4)) = 160/2 = 80px  */
+.drum-face-0 {
+  transform: rotateX(0deg)   translateZ(80px);
+  background-color: #ed6a5a;
+  background-image: radial-gradient(circle, rgba(245, 215, 67, 0.4) 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
+  color: #141414;
+}
+
+.drum-face-1 {
+  transform: rotateX(90deg)  translateZ(80px);
+  background-color: #f4f1bb;
+  background-image: radial-gradient(circle, rgba(185, 28, 28, 0.28) 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
+  color: #141414;
+}
+
+.drum-face-2 {
+  transform: rotateX(180deg) translateZ(80px);
+  background-color: #9bc1bc;
+  background-image: radial-gradient(circle, rgba(20, 20, 20, 0.22) 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
+  color: #141414;
+}
+
+.drum-face-3 {
+  transform: rotateX(270deg) translateZ(80px);
+  background-color: #5d576b;
+  background-image: radial-gradient(circle, rgba(245, 215, 67, 0.45) 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
+  color: #edf1e8;
+}
+
+/* ─── category pill buttons ─── */
+
+.lineup-cat-pills {
+  display: flex;
+  gap: 0.75em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cat-pill {
+  padding: 0.65em 1.8em;
+  border: 2px solid var(--fg);
+  border-radius: 50px;
+  background: transparent;
+  color: var(--fg);
+  font-family: "supply-mono";
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+.cat-pill:hover {
+  transform: scale(1.05);
+}
+
+.cat-pill-0.active { background: #ed6a5a; border-color: #ed6a5a; color: #141414; }
+.cat-pill-1.active { background: #f4f1bb; border-color: #b8b590; color: #141414; }
+.cat-pill-2.active { background: #9bc1bc; border-color: #9bc1bc; color: #141414; }
+.cat-pill-3.active { background: #5d576b; border-color: #5d576b; color: #edf1e8; }
+
+/* ─── events grid section ─── */
+.lineup-grid-section {
+  width: 100%;
+}
+
+.lineup-grid-section .work-items {
+  margin-bottom: 0;
+}
+
+/* ─── responsive ─── */
+@media (max-width: 1000px) {
+  .drum-face-text { font-size: clamp(1.6rem, 7vw, 2.8rem); }
+  .lineup-cat-pills { gap: 0.5em; }
+  .cat-pill { padding: 0.5em 1.2em; font-size: 0.72rem; }
+}
+
+@media (max-width: 600px) {
+  .lineup-hero-title h1 { font-size: 18vw; }
+  .drum-viewport { height: 120px; }
+  .drum-barrel  { height: 120px; }
+  .drum-face    { height: 120px; }
+  /* smaller prism radius for 120px height */
+  .drum-face-0 { transform: rotateX(0deg)   translateZ(60px); }
+  .drum-face-1 { transform: rotateX(90deg)  translateZ(60px); }
+  .drum-face-2 { transform: rotateX(180deg) translateZ(60px); }
+  .drum-face-3 { transform: rotateX(270deg) translateZ(60px); }
+}

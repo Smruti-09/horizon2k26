@@ -3,22 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Events | Horizon 2026</title>
+    <title>Lineup | Horizon 2026</title>
     <link rel="icon" href="/images/global/site-icon.png" />
 
     <link rel="stylesheet" href="/css/transition.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
     <link rel="stylesheet" href="/css/globals.css" />
     <link rel="stylesheet" href="/css/menu.css" />
-    <link rel="stylesheet" href="/css/home.css" />
     <link rel="stylesheet" href="/css/work.css" />
-    <link rel="stylesheet" href="/css/project.css" />
-    <link rel="stylesheet" href="/css/about.css" />
-    <link rel="stylesheet" href="/css/contact.css" />
     <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/lineup.css" />
   </head>
   <body>
-    <!-- page transition  -->
+    <!-- page transition -->
     <div class="transition">
       <div class="transition-overlay overlay-1"></div>
       <div class="transition-overlay overlay-2"></div>
@@ -27,7 +24,7 @@
       <div class="transition-overlay overlay-5"></div>
     </div>
 
-    <div class="page work-page">
+    <div class="page lineup-page">
       <!-- nav -->
       <nav>
         <div class="logo">
@@ -42,15 +39,16 @@
           </div>
         </div>
       </nav>
+
       <div class="nav-overlay">
         <div class="nav-items">
           <div class="nav-item">
             <p><a href="/">Index</a></p>
           </div>
-          <div class="nav-item active">
+          <div class="nav-item">
             <p><a href="/events">Events</a></p>
           </div>
-          <div class="nav-item">
+          <div class="nav-item active">
             <p><a href="/lineup">Lineup</a></p>
           </div>
           <div class="nav-item">
@@ -90,41 +88,72 @@
         </div>
       </div>
 
-      <!-- work - header -->
-      <section class="work-header">
-        <div class="work-header-content">
-          <div class="work-profile-icon">
-            <img
-              src="/images/work-header/work-portrait.jpg"
-              alt="Horizon 2026"
-            />
-          </div>
-          <p>Discover all Horizon 2026 events</p>
-          <div class="work-header-title">
-            <h1>All Events</h1>
-            <h1>Horizon 2026</h1>
-          </div>
-          <div class="work-header-arrow-icon">
-            <h1>&#8595;</h1>
-          </div>
+      <!-- lineup hero -->
+      <section class="lineup-hero">
+        <div class="lineup-hero-tag">
+          <p class="mn">✦ Horizon 2026 // Event Lineup</p>
         </div>
-        <div class="work-footer">
-          <div class="work-footer-symbols">
-            <img src="/images/global/symbols.png" alt="" />
-          </div>
-          <div class="work-footer-scroll-down">
-            <p class="mn">Browse the Events</p>
-          </div>
-          <div class="work-footer-tags">
-            <p class="mn">Events / 2026</p>
-          </div>
+        <div class="lineup-hero-title">
+          <h1>Pick Your</h1>
+          <h1>Arena</h1>
         </div>
+        <p class="lineup-hero-sub">Spin the drum — choose a category — enter the event.</p>
       </section>
 
-      <!-- work - work items -->
-      <section class="work-items" id="events-container"></section>
+      <!-- drum selector -->
+      <section class="lineup-selector-section">
 
-      <!-- work - footer -->
+        <div class="lineup-drum-wrapper">
+
+          <!-- decorative rivet corners -->
+          <span class="drum-rivet drum-rivet-tl"></span>
+          <span class="drum-rivet drum-rivet-tr"></span>
+          <span class="drum-rivet drum-rivet-bl"></span>
+          <span class="drum-rivet drum-rivet-br"></span>
+
+          <div class="drum-viewport">
+            <div class="drum-barrel" id="drum-barrel">
+
+              <div class="drum-face drum-face-0">
+                <span class="drum-face-icon">⚙</span>
+                <span class="drum-face-text">Technical Events</span>
+              </div>
+
+              <div class="drum-face drum-face-1">
+                <span class="drum-face-icon">🎯</span>
+                <span class="drum-face-text">Fun Events</span>
+              </div>
+
+              <div class="drum-face drum-face-2">
+                <span class="drum-face-icon">✒</span>
+                <span class="drum-face-text">Literary Events</span>
+              </div>
+
+              <div class="drum-face drum-face-3">
+                <span class="drum-face-icon">🎭</span>
+                <span class="drum-face-text">Cultural Events</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- category pills -->
+        <div class="lineup-cat-pills" id="lineup-cat-pills">
+          <button class="cat-pill cat-pill-0 active" data-index="0">Technical</button>
+          <button class="cat-pill cat-pill-1" data-index="1">Fun</button>
+          <button class="cat-pill cat-pill-2" data-index="2">Literary</button>
+          <button class="cat-pill cat-pill-3" data-index="3">Cultural</button>
+        </div>
+
+      </section>
+
+      <!-- events grid -->
+      <section class="lineup-grid-section">
+        <div class="work-items" id="lineup-grid"></div>
+      </section>
+
+      <!-- footer -->
       <footer>
         <div class="footer-container">
           <div class="footer-symbols footer-symbols-1">
@@ -142,6 +171,7 @@
             <div class="footer-col">
               <p>Quick Jumps</p>
               <p><a href="/events">Events</a></p>
+              <p><a href="/lineup">Lineup</a></p>
               <p><a href="/about">About</a></p>
               <p><a href="/contact">Contact</a></p>
             </div>
@@ -154,21 +184,13 @@
             <div class="footer-col">
               <p>Social Signals</p>
               <p>
-                <a href="https://www.youtube.com/@surya" target="_blank"
-                  >YouTube</a
-                >
+                <a href="https://www.youtube.com/@surya" target="_blank">YouTube</a>
               </p>
               <p>
-                <a
-                  href="#"
-                  target="_blank"
-                  >Membership</a
-                >
+                <a href="#" target="_blank">Membership</a>
               </p>
               <p>
-                <a href="https://www.instagram.com/surya/" target="_blank"
-                  >Instagram</a
-                >
+                <a href="https://www.instagram.com/surya/" target="_blank">Instagram</a>
               </p>
             </div>
             <div class="footer-col">
@@ -177,32 +199,23 @@
               <p>Freelance Top 100</p>
             </div>
           </div>
-
           <div class="copyright-info">
             <p class="mn">MWT - MAY 2025</p>
             <p class="mn">//</p>
             <p class="mn">
               Built by
-              <a href="https://www.youtube.com/@surya" target="_blank"
-                >Surya</a
-              >
+              <a href="https://www.youtube.com/@surya" target="_blank">Surya</a>
             </p>
           </div>
           <div class="explosion-container"></div>
         </div>
       </footer>
     </div>
+
     <script type="module" src="/js/transition.js"></script>
     <script type="module" src="/js/lenis-scroll.js"></script>
     <script type="module" src="/js/menu.js"></script>
-    <script type="module" src="/js/hero.js"></script>
-    <script type="module" src="/js/featured-work.js"></script>
-    <script type="module" src="/js/services.js"></script>
-    <script type="module" src="/js/work.js"></script>
-    <script type="module" src="/js/events-renderer.js"></script>
-    <script type="module" src="/js/project.js"></script>
-    <script type="module" src="/js/about.js"></script>
-    <script type="module" src="/js/contact.js"></script>
     <script type="module" src="/js/footer.js"></script>
+    <script type="module" src="/js/lineup.js"></script>
   </body>
 </html>
