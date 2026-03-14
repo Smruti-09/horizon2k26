@@ -427,6 +427,240 @@
   background-size: 22px 22px, 66px 66px, 66px 66px;
 }
 
+/* Event Schedule Calendar */
+.schedule-section {
+  position: relative;
+  width: 100vw;
+  min-height: 100svh;
+  padding: 6em 2em;
+  background-color: var(--accent4);
+  background-image: radial-gradient(circle, rgba(237, 241, 232, 0.1) 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.schedule-container {
+  width: min(1000px, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+}
+
+.schedule-header {
+  text-align: center;
+  color: var(--bg);
+  position: relative;
+  z-index: 2;
+}
+
+.schedule-title {
+  font-size: clamp(3rem, 8vw, 6rem);
+  text-shadow: 4px 4px 0px rgba(20, 20, 20, 0.6);
+}
+.schedule-title-sub {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  color: #f5d743;
+  text-shadow: 3px 3px 0px rgba(20, 20, 20, 0.6);
+  margin-top: -0.2em;
+}
+
+.schedule-days {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.schedule-day-card.ticket-layout {
+  position: relative;
+  background: var(--bg);
+  border: 4px solid var(--fg);
+  border-radius: 1.5em;
+  padding: 0;
+  box-shadow: 10px 10px 0px rgba(20, 20, 20, 0.8);
+  will-change: transform, opacity;
+  display: flex;
+  overflow: hidden;
+  align-items: stretch;
+}
+
+.ticket-stub {
+  width: 25%;
+  min-width: 180px;
+  background: var(--accent1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  text-align: center;
+}
+
+.stub-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+  color: var(--fg);
+}
+
+.ticket-divider {
+  width: 4px;
+  background: transparent;
+  border-left: 2px dashed rgba(20, 20, 20, 0.4);
+  position: relative;
+  margin: 1.5em 0;
+}
+
+/* Semi-circles for the ticket perforation illusion */
+.ticket-divider::before,
+.ticket-divider::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: var(--accent4);
+  border: 4px solid var(--fg);
+  border-radius: 50%;
+  left: -14px;
+  z-index: 10;
+}
+
+.ticket-divider::before {
+  top: -28px;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  transform: rotate(45deg);
+}
+
+.ticket-divider::after {
+  bottom: -28px;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  transform: rotate(45deg);
+}
+
+
+.ticket-body {
+  flex: 1;
+  padding: 2.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  justify-content: center;
+}
+
+.ticket-body h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5em;
+  border-bottom: 2px solid var(--fg);
+  padding-bottom: 0.5em;
+}
+
+.day-num {
+  font-family: "carnivalee", "rader";
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.day-date {
+  font-family: "supply-mono";
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  background: var(--fg);
+  color: var(--accent1);
+  padding: 0.3em 0.8em;
+  border-radius: 50px;
+  margin-top: 0.5em;
+}
+.th { font-size: 0.6em; vertical-align: top; }
+
+.schedule-events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.schedule-event-row {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 1.5em;
+  align-items: center;
+  padding: 0.5em 0;
+}
+
+.schedule-event-row:not(:last-child) {
+  border-bottom: 1px dashed rgba(20, 20, 20, 0.15);
+  padding-bottom: 1em;
+}
+
+.schedule-time {
+  font-family: "supply-mono";
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: var(--accent3);
+  background: var(--fg);
+  padding: 0.4em 0.8em;
+  border-radius: 4px;
+  text-align: center;
+  width: 100%;
+}
+
+.schedule-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35em;
+}
+
+.event-name {
+  font-family: "formula-narrow";
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.event-venue {
+  font-family: "supply-mono";
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.ticket-edge-bottom {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-image: radial-gradient(circle at center calc(100% + 2px), transparent 4px, var(--fg) 4px);
+  background-size: 15px 8px;
+  background-repeat: repeat-x;
+  background-position: bottom;
+  z-index: 5;
+}
+
+@media (max-width: 800px) {
+  .schedule-day-card.ticket-layout {
+    flex-direction: column;
+  }
+  .ticket-stub {
+    width: 100%;
+    border-bottom: 4px solid var(--fg);
+  }
+  .ticket-divider {
+    display: none;
+  }
+  .schedule-event-row {
+    grid-template-columns: 1fr;
+    gap: 0.5em;
+  }
+  .schedule-time { 
+    width: fit-content;
+    margin-bottom: 0.5em; 
+  }
+}
 .tactical-map::before {
   content: "IGIT SARANG // CAMPUS MAP";
   position: absolute;
