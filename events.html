@@ -121,8 +121,36 @@
         </div>
       </section>
 
+      <!-- events filter gate -->
+      <section class="events-filter-gate" id="events-filter-gate">
+        <div class="events-filter-board">
+          <p class="mn">Ticket Booth // Pick Your Lane</p>
+          <h2>Choose Event Category</h2>
+          <p class="mn events-selected-label">Selected: <span id="selected-events-label">None Yet</span></p>
+
+          <div class="events-filter-wheel" role="group" aria-label="Event Categories">
+            <button class="carnival-filter-chip" data-type="technical" type="button">
+              <span class="chip-icon">⚙</span>
+              <span class="chip-copy">Technical</span>
+            </button>
+            <button class="carnival-filter-chip" data-type="fun" type="button">
+              <span class="chip-icon">◎</span>
+              <span class="chip-copy">Fun</span>
+            </button>
+            <button class="carnival-filter-chip" data-type="literary" type="button">
+              <span class="chip-icon">✒</span>
+              <span class="chip-copy">Literary</span>
+            </button>
+            <button class="carnival-filter-chip" data-type="cultural" type="button">
+              <span class="chip-icon">🎭</span>
+              <span class="chip-copy">Cultural</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
       <!-- work - work items -->
-      <section class="work-items" id="events-container"></section>
+      <section class="work-items" id="events-container" hidden></section>
 
       <!-- work - footer -->
       <footer>
