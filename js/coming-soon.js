@@ -5,7 +5,7 @@
 import gsap from "gsap";
 
 // ---- Countdown Timer ----
-const FEST_DATE = new Date("2026-03-18T10:00:00+05:30").getTime();
+const FEST_DATE = new Date("2026-03-14T22:00:00+05:30").getTime();
 
 function updateCountdown() {
   const now = Date.now();
