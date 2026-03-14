@@ -1,6 +1,6 @@
 /* navbar */
 nav {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
@@ -23,9 +23,13 @@ nav .logo a {
 }
 
 nav .menu-toggle-btn {
+  position: fixed;
+  top: 2em;
+  right: 2em;
   padding: 0.6em 0.65em 0.65em 0.65em;
   background-color: var(--bg2);
   color: var(--fg);
+  z-index: 120;
 }
 
 nav .menu-toggle-btn.menu-open {
