@@ -93,6 +93,7 @@ nav .menu-toggle-btn-wrapper {
 .nav-overlay .nav-items .nav-item p {
   font-size: 2rem;
   user-select: none;
+  white-space: nowrap;
 }
 
 .nav-overlay .nav-items .nav-item.active {
