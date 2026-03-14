@@ -20,3 +20,6 @@ const COMING_SOON_MODE = true;
     window.location.replace("/");
   }
 })();
+
+import { inject } from '@vercel/analytics';
+inject();
