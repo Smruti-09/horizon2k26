@@ -35,8 +35,14 @@ function createEventCard(event, type) {
   ruleBtn.className = "event-btn event-btn-rulebook";
   ruleBtn.textContent = "Rulebook";
 
+  const detailBtn = document.createElement("a");
+  detailBtn.href = `/event-info?slug=${event.slug}`;
+  detailBtn.className = "event-btn event-btn-details";
+  detailBtn.textContent = "View Details";
+
   buttons.appendChild(regBtn);
   buttons.appendChild(ruleBtn);
+  buttons.appendChild(detailBtn);
   content.appendChild(h3);
   content.appendChild(p);
   content.appendChild(buttons);

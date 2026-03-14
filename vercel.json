@@ -7,6 +7,8 @@
     { "source": "/lineup", "destination": "/lineup.html" },
     { "source": "/project", "destination": "/project.html" },
     { "source": "/contact", "destination": "/contact.html" },
-    { "source": "/event-info", "destination": "/event-info.html" }
+    { "source": "/event-info", "destination": "/event-info.html" },
+    { "source": "/gallery", "destination": "/gallery.html" },
+    { "source": "/surya", "destination": "/surya.html" }
   ]
 }

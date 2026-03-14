@@ -134,3 +134,50 @@ footer .explosion-particle-img {
     display: none;
   }
 }
+
+/* ─── surya easter egg link ─── */
+footer .surya-easter-egg,
+.surya-easter-egg {
+  color: var(--bg);
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #f5d743;
+  text-underline-offset: 3px;
+  position: relative;
+  animation: suryaShimmer 2.5s ease-in-out infinite;
+  cursor: pointer;
+}
+
+.surya-easter-egg:hover {
+  color: #f5d743;
+}
+
+@keyframes suryaShimmer {
+  0%, 100% { text-decoration-color: #f5d743; opacity: 1; }
+  50% { text-decoration-color: #ed6a5a; opacity: 0.85; }
+}
+
+/* click-it nudge */
+.surya-easter-egg::before {
+  content: "click it ↑";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "supply-mono";
+  font-size: 0.55rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #f5d743;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  pointer-events: none;
+  animation: clickNudgeBounce 1s ease-in-out infinite;
+}
+
+@keyframes clickNudgeBounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); opacity: 1; }
+  50% { transform: translateX(-50%) translateY(-4px); opacity: 0.6; }
+}

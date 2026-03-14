@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>??? | Horizon 2026</title>
+    <link rel="icon" href="/images/global/site-icon.png" />
+
+    <link rel="stylesheet" href="/css/transition.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/globals.css" />
+    <link rel="stylesheet" href="/css/menu.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/surya.css" />
+  </head>
+  <body>
+    <!-- page transition -->
+    <div class="transition">
+      <div class="transition-overlay overlay-1"></div>
+      <div class="transition-overlay overlay-2"></div>
+      <div class="transition-overlay overlay-3"></div>
+      <div class="transition-overlay overlay-4"></div>
+      <div class="transition-overlay overlay-5"></div>
+    </div>
+
+    <div class="page surya-page">
+      <!-- nav -->
+      <nav>
+        <div class="logo">
+          <div class="logo-container">
+            <p class="mn"><a href="/">Horizon ✦ 2026</a></p>
+          </div>
+        </div>
+        <div class="menu-toggle-btn">
+          <div class="menu-toggle-btn-wrapper">
+            <p class="mn open-label">Menu</p>
+            <p class="mn close-label">Close</p>
+          </div>
+        </div>
+      </nav>
+      <div class="nav-overlay">
+        <div class="nav-items">
+          <div class="nav-item">
+            <p><a href="/">Index</a></p>
+          </div>
+          <div class="nav-item">
+            <p><a href="/events">Events</a></p>
+          </div>
+          <div class="nav-item">
+            <p><a href="/lineup">Where It Happens</a></p>
+          </div>
+          <div class="nav-item">
+            <p><a href="/gallery">Gallery</a></p>
+          </div>
+          <div class="nav-item">
+            <p><a href="/about">About</a></p>
+          </div>
+          <div class="nav-item">
+            <p><a href="/contact">Slide In</a></p>
+          </div>
+        </div>
+        <div class="nav-footer">
+          <div class="nav-footer-item">
+            <div class="nav-footer-item-header">
+              <p class="mn">Find Me</p>
+            </div>
+            <div class="nav-footer-item-copy">
+              <p class="mn"><a href="#" target="_blank">Instagram</a></p>
+              <p class="mn"><a href="#" target="_blank">LinkedIn</a></p>
+            </div>
+          </div>
+          <div class="nav-footer-item">
+            <div class="nav-footer-item-copy">
+              <p class="mn">Horizon — 2026 / Surya</p>
+            </div>
+          </div>
+          <div class="nav-footer-item">
+            <div class="nav-footer-item-header">
+              <p class="mn">Say Hi</p>
+            </div>
+            <div class="nav-footer-item-copy">
+              <p class="mn">
+                <a href="mailto:hello@horizon2026.com" target="_blank">hello@horizon2026.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- confetti canvas -->
+      <canvas id="confetti-canvas"></canvas>
+
+      <!-- music toggle -->
+      <button class="surya-music-toggle" id="music-toggle" aria-label="Toggle Music">
+        <span class="music-icon">🎵</span>
+        <span class="music-label mn">Music Off</span>
+      </button>
+      <audio id="bg-music" loop preload="auto">
+        <source src="/audio/carnival-bg.mp3" type="audio/mpeg" />
+      </audio>
+
+      <!-- jackpot hero -->
+      <section class="surya-hero">
+        <div class="surya-bunting" aria-hidden="true">
+          <span>🎪</span><span>⭐</span><span>🎠</span><span>🎡</span><span>🎪</span><span>⭐</span><span>🎠</span><span>🎡</span><span>🎪</span><span>⭐</span>
+        </div>
+
+        <div class="surya-jackpot-machine" id="surya-jackpot">
+          <div class="jackpot-frame">
+            <div class="jackpot-slot-window">
+              <div class="jackpot-slot-reel" id="jr-1">
+                <div>S</div><div>U</div><div>R</div><div>Y</div><div>A</div>
+              </div>
+            </div>
+            <div class="jackpot-slot-window">
+              <div class="jackpot-slot-reel" id="jr-2">
+                <div>U</div><div>R</div><div>Y</div><div>A</div><div>K</div>
+              </div>
+            </div>
+            <div class="jackpot-slot-window">
+              <div class="jackpot-slot-reel" id="jr-3">
+                <div>R</div><div>Y</div><div>A</div><div>K</div><div>A</div>
+              </div>
+            </div>
+            <div class="jackpot-slot-window">
+              <div class="jackpot-slot-reel" id="jr-4">
+                <div>Y</div><div>A</div><div>K</div><div>A</div><div>N</div>
+              </div>
+            </div>
+            <div class="jackpot-slot-window">
+              <div class="jackpot-slot-reel" id="jr-5">
+                <div>A</div><div>K</div><div>A</div><div>N</div><div>T</div>
+              </div>
+            </div>
+          </div>
+          <div class="jackpot-label">
+            <h1 class="jackpot-result" id="jackpot-result">PULL THE LEVER!</h1>
+          </div>
+        </div>
+
+        <div class="surya-hero-subtitle">
+          <p class="mn">✦ The Developer Behind the Curtain</p>
+        </div>
+
+        <div class="surya-bunting surya-bunting-bottom" aria-hidden="true">
+          <span>🎡</span><span>⭐</span><span>🎠</span><span>🎪</span><span>🎡</span><span>⭐</span><span>🎠</span><span>🎪</span><span>🎡</span><span>⭐</span>
+        </div>
+      </section>
+
+      <!-- developer card -->
+      <section class="surya-dev-card-section">
+        <div class="surya-dev-card">
+          <div class="dev-card-marquee">
+            <p class="mn">★ DEVELOPER ★ DESIGNER ★ DREAMER ★ DEVELOPER ★ DESIGNER ★ DREAMER ★ DEVELOPER ★ DESIGNER ★ DREAMER ★</p>
+          </div>
+          <div class="dev-card-body">
+            <div class="dev-card-name">
+              <h2>Suryakanta</h2>
+              <h2>Subudhi</h2>
+            </div>
+            <div class="dev-card-links">
+              <a href="https://instagram.com/suryakantsubudhi" target="_blank" class="dev-link dev-link-insta">
+                <span class="dev-link-icon">📸</span>
+                <span class="mn">Instagram</span>
+              </a>
+              <a href="#" target="_blank" class="dev-link dev-link-linkedin">
+                <span class="dev-link-icon">💼</span>
+                <span class="mn">LinkedIn</span>
+              </a>
+              <a href="mailto:suryakantsubudhi@protonmail.com" class="dev-link dev-link-mail">
+                <span class="dev-link-icon">✉️</span>
+                <span class="mn">Mail</span>
+              </a>
+            </div>
+          </div>
+          <div class="dev-card-marquee dev-card-marquee-reverse">
+            <p class="mn">★ CODER ★ CREATOR ★ CARNIVAL MASTER ★ CODER ★ CREATOR ★ CARNIVAL MASTER ★ CODER ★ CREATOR ★ CARNIVAL MASTER ★</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- about section -->
+      <section class="surya-about">
+        <div class="surya-about-header">
+          <h2>About the<br>Ringmaster</h2>
+          <p class="mn">The one who pulled the strings</p>
+        </div>
+        <p class="surya-about-text">
+          The architect behind Horizon 2026's digital carnival. From wireframe to
+          wild — every pixel, every animation, every confetti burst was carefully
+          orchestrated to create an experience that feels alive, joyful, and
+          unforgettable. This is what happens when code meets carnival.
+        </p>
+      </section>
+
+      <!-- favourite things timeline -->
+      <section class="surya-timeline-section">
+        <div class="surya-timeline-header">
+          <h2>Favourite<br>Things</h2>
+          <p class="mn">The non-negotiables ✦</p>
+        </div>
+        <div class="surya-timeline">
+          <div class="timeline-item" data-index="0">
+            <div class="timeline-connector"></div>
+            <div class="timeline-card timeline-card-accent1">
+              <div class="timeline-icon">🏏</div>
+              <h3>Watching Mahi Play</h3>
+              <p class="mn">The helicopter shot. The calm. The legend. Nothing compares.</p>
+            </div>
+          </div>
+          <div class="timeline-item" data-index="1">
+            <div class="timeline-connector"></div>
+            <div class="timeline-card timeline-card-accent2">
+              <div class="timeline-icon">🏴‍☠️</div>
+              <h3>One Piece</h3>
+              <p class="mn">Luffy's dream is my dream. The Grand Line awaits.</p>
+            </div>
+          </div>
+          <div class="timeline-item" data-index="2">
+            <div class="timeline-connector"></div>
+            <div class="timeline-card timeline-card-accent3">
+              <div class="timeline-icon">🏐</div>
+              <h3>Volleyball</h3>
+              <p class="mn">Spikes, dives, and the rush of the court. Pure energy.</p>
+            </div>
+          </div>
+          <div class="timeline-item" data-index="3">
+            <div class="timeline-connector"></div>
+            <div class="timeline-card timeline-card-accent4">
+              <div class="timeline-icon">😴</div>
+              <h3>Sleeping</h3>
+              <p class="mn">The ultimate power move. Recharge. Reset. Reload.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer>
+        <div class="footer-container">
+          <div class="footer-symbols footer-symbols-1">
+            <img src="/images/global/s6.png" alt="" />
+            <img src="/images/global/s6.png" alt="" />
+          </div>
+          <div class="footer-symbols footer-symbols-2">
+            <img src="/images/global/s6.png" alt="" />
+            <img src="/images/global/s6.png" alt="" />
+          </div>
+          <div class="footer-header">
+            <h1>Horizon 2026</h1>
+          </div>
+          <div class="footer-row">
+            <div class="footer-col">
+              <p>Quick Jumps</p>
+              <p><a href="/events">Events</a></p>
+              <p><a href="/about">About</a></p>
+              <p><a href="/contact">Contact</a></p>
+            </div>
+            <div class="footer-col">
+              <p>Side Streets</p>
+              <p>Roll the Showreel</p>
+              <p>Weird Shop</p>
+              <p>Buy Me a Coffee</p>
+            </div>
+            <div class="footer-col">
+              <p>Social Signals</p>
+              <p><a href="https://www.youtube.com/@surya" target="_blank">YouTube</a></p>
+              <p><a href="#" target="_blank">Membership</a></p>
+              <p><a href="https://www.instagram.com/surya/" target="_blank">Instagram</a></p>
+            </div>
+            <div class="footer-col">
+              <p>Alt Dimensions</p>
+              <p>Logo Dump</p>
+              <p>Freelance Top 100</p>
+            </div>
+          </div>
+          <div class="copyright-info">
+            <p class="mn">MWT - MAY 2025</p>
+            <p class="mn">//</p>
+            <p class="mn">You found me! 🎪</p>
+          </div>
+          <div class="explosion-container"></div>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/js/transition.js"></script>
+    <script type="module" src="/js/lenis-scroll.js"></script>
+    <script type="module" src="/js/menu.js"></script>
+    <script type="module" src="/js/footer.js"></script>
+    <script type="module" src="/js/surya.js"></script>
+  </body>
+</html>

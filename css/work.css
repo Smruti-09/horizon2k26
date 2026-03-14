@@ -298,3 +298,22 @@
   border: 2px solid var(--fg);
   letter-spacing: 0.04em;
 }
+
+.event-btn-details {
+  display: inline-block;
+  padding: 0.5em 1.4em;
+  background: var(--accent3);
+  color: var(--fg);
+  font-family: "supply-mono";
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  border-radius: 50px;
+  text-decoration: none;
+  border: 2px solid var(--fg);
+  letter-spacing: 0.04em;
+  transition: transform 0.15s ease;
+}
+
+.event-btn-details:hover {
+  transform: translateY(-2px);
+}

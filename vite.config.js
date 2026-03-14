@@ -12,6 +12,8 @@ export default defineConfig({
         project: resolve(__dirname, "project.html"),
         contact: resolve(__dirname, "contact.html"),
         "event-info": resolve(__dirname, "event-info.html"),
+        gallery: resolve(__dirname, "gallery.html"),
+        surya: resolve(__dirname, "surya.html"),
       },
     },
     assetsInclude: [
@@ -20,6 +22,7 @@ export default defineConfig({
       "**/*.png",
       "**/*.svg",
       "**/*.gif",
+      "**/*.mp3",
     ],
     copyPublicDir: true,
   },

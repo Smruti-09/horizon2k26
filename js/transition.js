@@ -90,6 +90,41 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  /* ── FAHH preloader for /surya ── */
+  function showFahhPreloader(href) {
+    return new Promise((resolve) => {
+      const fahh = document.createElement("div");
+      fahh.className = "fahh-preloader";
+      fahh.innerHTML = `
+        <div class="fahh-text">FAHHHHHHHH!!</div>
+        <p class="fahh-sub">entering the backstage...</p>
+      `;
+      document.body.appendChild(fahh);
+
+      // Play the sound effect
+      const sfx = new Audio("/audio/fahh-sfx.mp3");
+      sfx.volume = 0.5;
+      sfx.play().catch(() => {});
+
+      const tl = gsap.timeline();
+      tl.fromTo(".fahh-text",
+        { scale: 0, rotation: -15 },
+        { scale: 1, rotation: 0, duration: 0.6, ease: "elastic.out(1, 0.4)" }
+      );
+      tl.to(".fahh-sub", { opacity: 1, duration: 0.3 }, "-=0.2");
+      tl.to({}, { duration: 0.8 }); // pause
+      tl.to(fahh, {
+        yPercent: -100,
+        duration: 0.7,
+        ease: "power3.inOut",
+        onComplete: () => {
+          fahh.remove();
+          resolve();
+        },
+      });
+    });
+  }
+
   function closeMenuIfOpen() {
     const menuToggleBtn = document.querySelector(".menu-toggle-btn");
     if (menuToggleBtn && menuToggleBtn.classList.contains("menu-open")) {
@@ -148,6 +183,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
       console.log("Different page - doing transition");
       event.preventDefault();
+
+      /* Special FAHH preloader for /surya links */
+      if (href === "/surya" || href === "/surya.html") {
+        showFahhPreloader(href).then(() => {
+          window.location.href = href;
+        });
+        return;
+      }
 
       animateTransition().then(() => {
         window.location.href = href;

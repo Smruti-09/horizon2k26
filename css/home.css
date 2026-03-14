@@ -43,6 +43,23 @@
   transform: translateX(-50%);
 }
 
+/* desktop: pin scroll nudge pill to the left side of hero */
+.hero .hero-scroll-nudge {
+  display: none;
+}
+
+@media (min-width: 1001px) {
+  .hero .hero-scroll-nudge {
+    display: inline-flex;
+    position: absolute;
+    left: 2em;
+    top: 50%;
+    transform: translateY(90%) translateX(70%);
+    margin-top: 0;
+    z-index: 50;
+  }
+}
+
 .hero .hero-footer .hero-footer-symbols {
   height: 1rem;
 }
@@ -276,7 +293,7 @@
     max-width: calc(100vw - 9em);
   }
 
-  .hero .hero-footer .hero-footer-scroll-down > p.mn {
+  .hero .hero-footer .hero-footer-scroll-down>p.mn {
     font-size: 0.68rem;
     line-height: 1.2;
   }
@@ -379,7 +396,7 @@
     max-width: calc(100vw - 8em);
   }
 
-  .hero .hero-footer .hero-footer-scroll-down > p.mn,
+  .hero .hero-footer .hero-footer-scroll-down>p.mn,
   .hero .hero-footer .hero-footer-tags p.mn {
     font-size: 0.62rem;
   }
@@ -460,6 +477,7 @@
   font-size: clamp(3rem, 8vw, 6rem);
   text-shadow: 4px 4px 0px rgba(20, 20, 20, 0.6);
 }
+
 .schedule-title-sub {
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   color: #f5d743;
@@ -584,7 +602,11 @@
   border-radius: 50px;
   margin-top: 0.5em;
 }
-.th { font-size: 0.6em; vertical-align: top; }
+
+.th {
+  font-size: 0.6em;
+  vertical-align: top;
+}
 
 .schedule-events-list {
   display: flex;
@@ -630,6 +652,7 @@
   text-transform: uppercase;
   line-height: 1.2;
 }
+
 .event-venue {
   font-family: "supply-mono";
   font-size: 0.8rem;
@@ -654,22 +677,27 @@
   .schedule-day-card.ticket-layout {
     flex-direction: column;
   }
+
   .ticket-stub {
     width: 100%;
     border-bottom: 4px solid #f5d743;
   }
+
   .ticket-divider {
     display: none;
   }
+
   .schedule-event-row {
     grid-template-columns: 1fr;
     gap: 0.5em;
   }
-  .schedule-time { 
+
+  .schedule-time {
     width: fit-content;
-    margin-bottom: 0.5em; 
+    margin-bottom: 0.5em;
   }
 }
+
 .tactical-map::before {
   content: "IGIT SARANG // CAMPUS MAP";
   position: absolute;
@@ -759,8 +787,17 @@
 }
 
 @keyframes tac-ping {
-  0%   { width: 13px; height: 13px; opacity: 0.85; }
-  100% { width: 50px; height: 50px; opacity: 0; }
+  0% {
+    width: 13px;
+    height: 13px;
+    opacity: 0.85;
+  }
+
+  100% {
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+  }
 }
 
 .map-pin-label {
@@ -816,11 +853,13 @@
 }
 
 @keyframes scroll-nudge-bounce {
+
   0%,
   100% {
     transform: translateY(0);
     opacity: 0.9;
   }
+
   50% {
     transform: translateY(4px);
     opacity: 0.55;
@@ -834,11 +873,9 @@
   border: 0.22em solid var(--fg);
   border-radius: 1.25em;
   background-color: var(--accent1);
-  background-image: radial-gradient(
-    circle,
-    rgba(245, 215, 67, 0.38) 1.5px,
-    transparent 1.5px
-  );
+  background-image: radial-gradient(circle,
+      rgba(245, 215, 67, 0.38) 1.5px,
+      transparent 1.5px);
   background-size: 20px 20px;
   padding: 1.75em 1.5em 1.5em;
   display: flex;
