@@ -14,6 +14,7 @@ export default defineConfig({
         "event-info": resolve(__dirname, "event-info.html"),
         gallery: resolve(__dirname, "gallery.html"),
         surya: resolve(__dirname, "surya.html"),
+        "coming-soon": resolve(__dirname, "coming-soon.html"),
       },
     },
     assetsInclude: [

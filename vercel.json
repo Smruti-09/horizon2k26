@@ -9,6 +9,7 @@
     { "source": "/contact", "destination": "/contact.html" },
     { "source": "/event-info", "destination": "/event-info.html" },
     { "source": "/gallery", "destination": "/gallery.html" },
-    { "source": "/surya", "destination": "/surya.html" }
+    { "source": "/surya", "destination": "/surya.html" },
+    { "source": "/coming-soon", "destination": "/coming-soon.html" }
   ]
 }

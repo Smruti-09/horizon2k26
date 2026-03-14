@@ -1,0 +1,476 @@
+/* ============================================
+   COMING SOON — Carnival Theme
+   ============================================ */
+
+:root {
+  --cs-bg: #1a0a0a;
+  --cs-bg2: #2a0e0e;
+  --cs-gold: #f5c518;
+  --cs-gold-dim: #c89e0e;
+  --cs-red: #e63946;
+  --cs-red-deep: #9b1b30;
+  --cs-cream: #fdf0d5;
+  --cs-white: #fff8f0;
+  --cs-pink: #ff6b9d;
+  --cs-purple: #6b2fa0;
+  --cs-teal: #2ec4b6;
+}
+
+/* ---- Base ---- */
+.coming-soon-page {
+  position: relative;
+  width: 100vw;
+  min-height: 100svh;
+  background: var(--cs-bg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--cs-cream);
+}
+
+/* ---- Animated stripe background ---- */
+.cs-stripe-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--cs-bg) 0px,
+    var(--cs-bg) 40px,
+    var(--cs-bg2) 40px,
+    var(--cs-bg2) 80px
+  );
+  opacity: 1;
+}
+
+.cs-stripe-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at 50% 40%,
+    rgba(245, 197, 24, 0.08) 0%,
+    transparent 70%
+  );
+}
+
+/* ---- Marquee banners (top & bottom) ---- */
+.cs-marquee {
+  position: fixed;
+  left: 0;
+  width: 200%;
+  height: 36px;
+  background: var(--cs-red);
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(230, 57, 70, 0.4);
+}
+
+.cs-marquee--top {
+  top: 0;
+  transform: rotate(-1deg) translateY(-2px);
+  animation: marqueeSlide 20s linear infinite;
+}
+
+.cs-marquee--bottom {
+  bottom: 0;
+  transform: rotate(1deg) translateY(2px);
+  animation: marqueeSlide 25s linear infinite reverse;
+}
+
+.cs-marquee span {
+  font-family: "supply-mono", monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--cs-cream);
+  white-space: nowrap;
+  letter-spacing: 0.15em;
+  padding: 0 2em;
+}
+
+.cs-marquee span::after {
+  content: " ✦ ";
+  color: var(--cs-gold);
+}
+
+@keyframes marqueeSlide {
+  0% {
+    transform: translateX(0) rotate(-1deg);
+  }
+  100% {
+    transform: translateX(-50%) rotate(-1deg);
+  }
+}
+
+/* ---- Main content container ---- */
+.cs-content {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  gap: 2rem;
+}
+
+/* ---- Badge / tagline ---- */
+.cs-badge {
+  font-family: "supply-mono", monospace;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: var(--cs-gold);
+  background: rgba(245, 197, 24, 0.1);
+  border: 1px solid var(--cs-gold-dim);
+  padding: 0.6em 1.8em;
+  border-radius: 50px;
+}
+
+/* ---- Title ---- */
+.cs-title {
+  font-family: "carnivalee", "rader", sans-serif;
+  font-size: clamp(4rem, 12vw, 10rem);
+  line-height: 0.9;
+  text-transform: uppercase;
+  color: var(--cs-cream);
+  text-shadow:
+    0 0 20px rgba(245, 197, 24, 0.4),
+    0 0 60px rgba(245, 197, 24, 0.15),
+    3px 3px 0 var(--cs-red-deep);
+  position: relative;
+}
+
+.cs-title span {
+  display: block;
+}
+
+.cs-title .cs-title-year {
+  font-size: 0.55em;
+  color: var(--cs-gold);
+  text-shadow:
+    0 0 30px rgba(245, 197, 24, 0.6),
+    0 0 80px rgba(245, 197, 24, 0.2),
+    2px 2px 0 var(--cs-red-deep);
+  letter-spacing: 0.15em;
+}
+
+/* ---- Subtitle ---- */
+.cs-subtitle {
+  font-family: "carnivalee", "rader", sans-serif;
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  text-transform: uppercase;
+  color: var(--cs-red);
+  text-shadow:
+    0 0 20px rgba(230, 57, 70, 0.5),
+    0 0 60px rgba(230, 57, 70, 0.15);
+  letter-spacing: 0.1em;
+  animation: subtitlePulse 3s ease-in-out infinite;
+}
+
+@keyframes subtitlePulse {
+  0%, 100% {
+    opacity: 1;
+    text-shadow:
+      0 0 20px rgba(230, 57, 70, 0.5),
+      0 0 60px rgba(230, 57, 70, 0.15);
+  }
+  50% {
+    opacity: 0.85;
+    text-shadow:
+      0 0 30px rgba(230, 57, 70, 0.7),
+      0 0 80px rgba(230, 57, 70, 0.3);
+  }
+}
+
+/* ---- Countdown ---- */
+.cs-countdown {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cs-countdown-box {
+  position: relative;
+  width: 100px;
+  height: 120px;
+  background: linear-gradient(135deg, var(--cs-bg2), #3a1520);
+  border: 2px solid var(--cs-gold-dim);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(245, 197, 24, 0.1);
+  overflow: hidden;
+}
+
+/* ticket notch at top */
+.cs-countdown-box::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 10px;
+  background: var(--cs-bg);
+  border-radius: 0 0 8px 8px;
+  border: 2px solid var(--cs-gold-dim);
+  border-top: none;
+}
+
+/* decorative stripes */
+.cs-countdown-box::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--cs-red) 0px,
+    var(--cs-red) 8px,
+    var(--cs-gold) 8px,
+    var(--cs-gold) 16px
+  );
+}
+
+.cs-countdown-number {
+  font-family: "carnivalee", "rader", sans-serif;
+  font-size: 2.8rem;
+  color: var(--cs-gold);
+  line-height: 1;
+  text-shadow: 0 0 15px rgba(245, 197, 24, 0.4);
+}
+
+.cs-countdown-label {
+  font-family: "supply-mono", monospace;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--cs-cream);
+  opacity: 0.7;
+  margin-top: 4px;
+}
+
+/* ---- Tagline ---- */
+.cs-tagline {
+  font-family: "formula-narrow", sans-serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--cs-cream);
+  opacity: 0.6;
+  max-width: 420px;
+  line-height: 1.5;
+}
+
+/* ---- Social links ---- */
+.cs-socials {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.cs-socials a {
+  font-family: "supply-mono", monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--cs-cream);
+  text-decoration: none;
+  padding: 0.5em 1.2em;
+  border: 1px solid rgba(253, 240, 213, 0.2);
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.cs-socials a:hover {
+  color: var(--cs-gold);
+  border-color: var(--cs-gold);
+  background: rgba(245, 197, 24, 0.08);
+  box-shadow: 0 0 20px rgba(245, 197, 24, 0.15);
+}
+
+/* ---- College info ---- */
+.cs-college {
+  font-family: "supply-mono", monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--cs-cream);
+  opacity: 0.35;
+  margin-top: 1rem;
+}
+
+/* ---- Confetti canvas ---- */
+#cs-confetti-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* ---- Decorative corner bulbs ---- */
+.cs-corner-bulb {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  z-index: 11;
+}
+
+.cs-corner-bulb--tl { top: 50px; left: 20px; }
+.cs-corner-bulb--tr { top: 50px; right: 20px; }
+.cs-corner-bulb--bl { bottom: 50px; left: 20px; }
+.cs-corner-bulb--br { bottom: 50px; right: 20px; }
+
+.cs-corner-bulb:nth-child(odd) {
+  background: var(--cs-gold);
+  box-shadow: 0 0 10px var(--cs-gold), 0 0 20px var(--cs-gold);
+  animation: bulbBlink 2s ease-in-out infinite;
+}
+
+.cs-corner-bulb:nth-child(even) {
+  background: var(--cs-red);
+  box-shadow: 0 0 10px var(--cs-red), 0 0 20px var(--cs-red);
+  animation: bulbBlink 2s ease-in-out infinite 1s;
+}
+
+@keyframes bulbBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+/* ---- Light string (top border) ---- */
+.cs-lights {
+  position: fixed;
+  top: 36px;
+  left: 0;
+  right: 0;
+  height: 20px;
+  z-index: 9;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.cs-light-bulb {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  animation: lightChase 3s ease-in-out infinite;
+}
+
+.cs-light-bulb:nth-child(5n+1) {
+  background: var(--cs-red);
+  box-shadow: 0 0 6px var(--cs-red);
+  animation-delay: 0s;
+}
+.cs-light-bulb:nth-child(5n+2) {
+  background: var(--cs-gold);
+  box-shadow: 0 0 6px var(--cs-gold);
+  animation-delay: 0.3s;
+}
+.cs-light-bulb:nth-child(5n+3) {
+  background: var(--cs-teal);
+  box-shadow: 0 0 6px var(--cs-teal);
+  animation-delay: 0.6s;
+}
+.cs-light-bulb:nth-child(5n+4) {
+  background: var(--cs-pink);
+  box-shadow: 0 0 6px var(--cs-pink);
+  animation-delay: 0.9s;
+}
+.cs-light-bulb:nth-child(5n+5) {
+  background: var(--cs-purple);
+  box-shadow: 0 0 6px var(--cs-purple);
+  animation-delay: 1.2s;
+}
+
+@keyframes lightChase {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.25; transform: scale(0.7); }
+}
+
+/* ---- Stars / sparkle dots ---- */
+.cs-sparkle {
+  position: fixed;
+  width: 3px;
+  height: 3px;
+  background: var(--cs-gold);
+  border-radius: 50%;
+  z-index: 1;
+  opacity: 0;
+  animation: sparkle 4s ease-in-out infinite;
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0; transform: scale(0.5); }
+  50% { opacity: 0.8; transform: scale(1.2); }
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .cs-content {
+    padding: 5rem 1.5rem 4rem;
+    gap: 1.5rem;
+  }
+
+  .cs-countdown-box {
+    width: 75px;
+    height: 95px;
+  }
+
+  .cs-countdown-number {
+    font-size: 2rem;
+  }
+
+  .cs-countdown-label {
+    font-size: 0.55rem;
+  }
+
+  .cs-marquee {
+    height: 28px;
+  }
+
+  .cs-marquee span {
+    font-size: 0.65rem;
+  }
+
+  .cs-socials {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .cs-countdown {
+    gap: 0.6rem;
+  }
+
+  .cs-countdown-box {
+    width: 65px;
+    height: 85px;
+  }
+
+  .cs-countdown-number {
+    font-size: 1.6rem;
+  }
+}
