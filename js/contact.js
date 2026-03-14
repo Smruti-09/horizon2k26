@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const images = Array.from(
     { length: config.imageCount },
-    (_, i) => `/images/work-items/work-item-${i + 1}.jpg`
+    (_, i) => `https://res.cloudinary.com/daz9tusly/image/upload/f_auto,q_auto/v1/horizon2026/images/work-items/work-item-${i + 1}.jpg`
   );
   const trail = [];
 

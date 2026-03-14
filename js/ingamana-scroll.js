@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const IMAGES = [];
   for (let i = 1; i <= 10; i++) {
-    IMAGES.push(`/images/work-items/work-item-${i}.jpg`);
+    IMAGES.push(`https://res.cloudinary.com/daz9tusly/image/upload/f_auto,q_auto/v1/horizon2026/images/work-items/work-item-${i}.jpg`);
   }
 
   const EVENTS = [

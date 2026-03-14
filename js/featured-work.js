@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
       featuredImgCard.className = `featured-img-card featured-img-card-${i}`;
 
       const img = document.createElement("img");
-      img.src = `/images/work-items/work-item-${i}.jpg`;
+      img.src = `https://res.cloudinary.com/daz9tusly/image/upload/f_auto,q_auto/v1/horizon2026/images/work-items/work-item-${i}.jpg`;
       img.alt = `featured work image ${i}`;
       featuredImgCard.appendChild(img);
 

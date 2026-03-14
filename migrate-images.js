@@ -16,6 +16,7 @@ function replaceInFile(filePath) {
   // This looks for "https://res.cloudinary.com/daz9tusly/image/upload/f_auto,q_auto/v1/horizon2026/images/ and replaces it with the Cloudinary prefix
   content = content.replace(/"\/images\//g, CLOUDINARY_PREFIX);
   content = content.replace(/'\/images\//g, "'" + CLOUDINARY_PREFIX.slice(1));
+  content = content.replace(/`\/images\//g, "`" + CLOUDINARY_PREFIX.slice(1));
   
   if (content !== originalContent) {
     fs.writeFileSync(filePath, content, 'utf8');

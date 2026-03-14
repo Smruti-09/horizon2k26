@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setInterval(() => {
     currentImageIndex =
       currentImageIndex >= totalImages ? 1 : currentImageIndex + 1;
-    heroImg.src = `/images/work-items/work-item-${currentImageIndex}.jpg`;
+    heroImg.src = `https://res.cloudinary.com/daz9tusly/image/upload/f_auto,q_auto/v1/horizon2026/images/work-items/work-item-${currentImageIndex}.jpg`;
   }, 250);
 
   const initAnimations = () => {
