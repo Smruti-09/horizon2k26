@@ -31,7 +31,7 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/fate-brings-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/fate-brings-1.jpg`,
     ],
   },
   {
@@ -52,7 +52,7 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/trivia-trek-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/trivia-trek-1.jpg`,
     ],
   },
   {
@@ -73,7 +73,7 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/youth-parliament-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/youth-parliament-1.jpg`,
     ],
   },
   {
@@ -94,7 +94,7 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/identity-insights-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/identity-insights-1.jpg`,
     ],
   },
   {
@@ -115,7 +115,7 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/brainy-grid-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/brainy-grid-1.jpg`,
     ],
   },
   {
@@ -136,7 +136,7 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/spell-bee-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/spell-bee-1.jpg`,
     ],
   },
   {
@@ -157,7 +157,7 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/debate-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/debate-1.jpg`,
     ],
   },
   {
@@ -178,7 +178,7 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/finger-dab-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/finger-dab-1.jpg`,
     ],
   },
   {
@@ -199,7 +199,7 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/ppdt-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/ppdt-1.jpg`,
     ],
   },
   {
@@ -220,7 +220,7 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/visual-verses-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/visual-verses-1.jpg`,
     ],
   },
   {
@@ -241,7 +241,7 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/naqaab-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/naqaab-1.jpg`,
     ],
   },
   //literary events end
@@ -265,8 +265,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/soft-noise-1.jpg`,
-      `${CMS_BASE}/soft-noise-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/soft-noise-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/soft-noise-2.jpg`,
     ],
   },
   {
@@ -287,8 +287,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -309,8 +309,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -331,8 +331,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -353,8 +353,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -375,8 +375,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
 
@@ -399,8 +399,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -421,8 +421,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -443,8 +443,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -465,8 +465,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -487,8 +487,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -509,8 +509,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -531,8 +531,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -553,8 +553,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -575,8 +575,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -597,8 +597,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -619,8 +619,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -641,8 +641,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -663,8 +663,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -685,8 +685,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -707,8 +707,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -729,8 +729,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   // {
@@ -751,8 +751,8 @@ export const EVENTS = [
   //     { name: "TBA", phone: "" }
   //   ],
   //   gallery: [
-  //     `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-  //     `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+  //     `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+  //     `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
   //   ],
   // },
   {
@@ -773,8 +773,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   // Tech events end
@@ -798,8 +798,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -820,8 +820,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -842,8 +842,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -864,8 +864,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -886,8 +886,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -908,8 +908,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -930,8 +930,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -952,8 +952,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -974,8 +974,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -996,8 +996,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -1018,8 +1018,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -1040,8 +1040,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -1062,8 +1062,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -1084,8 +1084,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   // fun events
@@ -1107,8 +1107,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -1129,8 +1129,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -1151,8 +1151,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -1173,8 +1173,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -1195,8 +1195,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -1217,8 +1217,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -1239,8 +1239,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -1261,8 +1261,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -1283,8 +1283,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -1305,8 +1305,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -1327,8 +1327,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
   {
@@ -1349,8 +1349,8 @@ export const EVENTS = [
       { name: "TBA", phone: "" }
     ],
     gallery: [
-      `${CMS_BASE}/cloud-valley-echo-1.jpg`,
-      `${CMS_BASE}/cloud-valley-echo-2.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-1.jpg`,
+      `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/gallery/cloud-valley-echo-2.jpg`,
     ],
   },
 
