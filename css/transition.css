@@ -39,3 +39,108 @@
 .transition-overlay.overlay-5 {
   background-color: var(--accent4);
 }
+
+/* Carnival Preloader */
+.carnival-preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--accent1);
+  background-image: radial-gradient(circle, rgba(245, 215, 67, 0.4) 2px, transparent 2px);
+  background-size: 30px 30px;
+  z-index: 200000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.jackpot-machine {
+  display: flex;
+  gap: 15px;
+  background: var(--fg);
+  padding: 15px 20px;
+  border-radius: 12px;
+  border: 4px solid #f5d743;
+  box-shadow: 0px 8px 0px rgba(20, 20, 20, 0.4), inset 0 4px 10px rgba(0,0,0,0.5);
+  transform: rotate(-2deg);
+  animation: machine-float 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes machine-float {
+  0% { transform: translateY(0) rotate(-2deg); }
+  100% { transform: translateY(-10px) rotate(1deg); }
+}
+
+.jackpot-window {
+  width: 60px;
+  height: 80px;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: inset 0px 4px 6px rgba(0,0,0,0.3);
+  border: 2px solid #ccc;
+}
+
+/* inner fade depth effect */
+.jackpot-window::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.4) 0%,
+    transparent 20%,
+    transparent 80%,
+    rgba(0,0,0,0.4) 100%
+  );
+  z-index: 10;
+  pointer-events: none;
+}
+
+.jackpot-reel {
+  display: flex;
+  flex-direction: column;
+  /* GSAP now handles the stopping animation, no infinite spin */
+}
+
+.jackpot-reel > div {
+  width: 100%;
+  height: 80px; /* same as window height to snap */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+.preloader-text {
+  margin-top: 2.5rem;
+  font-family: "supply-mono";
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.25em;
+  color: var(--fg);
+  animation: blink 1.2s infinite;
+}
+
+.jackpot-text {
+  position: absolute;
+  margin-top: 12rem;
+  font-family: "carnivalee", "rader";
+  font-size: 5rem;
+  color: #f5d743;
+  text-shadow: 4px 4px 0px rgba(20, 20, 20, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.5);
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
