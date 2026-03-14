@@ -17,7 +17,7 @@ export const EVENTS = [
     name: "Fate brings your own words",
     slug: "fate-brings-your-own-words",
     type: "literary",
-    image: `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/posters/fate-brings-your-own-words.png`,
+    image: `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/posters/fate.png`,
     registerUrl: "https://forms.gle/MSXMK9ByxoYvZaXn8",
     rulebookUrl: "#",
     venue: "Seminar Hall A",
@@ -59,7 +59,7 @@ export const EVENTS = [
     name: "Youth Parliament",
     slug: "youth-parliament",
     type: "literary",
-    image: `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/posters/youth-parliament.png`,
+    image: `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/posters/youthparliament.png`,
     registerUrl: "https://forms.gle/ko1LGKF87QcHXcUXA",
     rulebookUrl: "#",
     venue: "Main Auditorium",
@@ -80,7 +80,7 @@ export const EVENTS = [
     name: "Identity Insights",
     slug: "identity-insights",
     type: "literary",
-    image: `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/posters/identity-insights.png`,
+    image: `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/posters/identityinsights.png`,
     registerUrl: "https://forms.gle/95i9kfEQe5jTY6WQ8",
     rulebookUrl: "#",
     venue: "Seminar Hall A",
@@ -1092,7 +1092,7 @@ export const EVENTS = [
   {
     name: "Digital Duel",
     slug: "digital-duel",
-    type: "cultural",
+    type: "fun",
     image: `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/posters/digital-duel.png`,
     registerUrl: "https://forms.gle/JhvZtgXnRkWDiFKa9",
     rulebookUrl: "#",
@@ -1114,8 +1114,8 @@ export const EVENTS = [
   {
     name: "Destiny Duo",
     slug: "destiny-duo",
-    type: "cultural",
-    image: `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/posters/destiny-duo.png`,
+    type: "fun",
+    image: `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/posters/destinyduo.png`,
     registerUrl: "https://forms.gle/hXcQeGeeSD2QWUJX7",
     rulebookUrl: "#",
     venue: "Open Amphitheatre",
@@ -1136,7 +1136,7 @@ export const EVENTS = [
   {
     name: "Paper Dance",
     slug: "paper-dance",
-    type: "cultural",
+    type: "fun",
     image: `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/posters/paper-dance.png`,
     registerUrl: "https://forms.gle/x77S8ZLPGnrieukB6",
     rulebookUrl: "#",
@@ -1158,7 +1158,7 @@ export const EVENTS = [
   {
     name: "Burst the Balloon",
     slug: "burst-the-balloon",
-    type: "cultural",
+    type: "fun",
     image: `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/posters/burst-the-balloon.png`,
     registerUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdF0ozTdr2gEAXxknTFAROBDPGGPWWFihzoOqT8ja38w1nF4A/viewform?usp=dialog",
     rulebookUrl: "#",
@@ -1180,7 +1180,7 @@ export const EVENTS = [
   {
     name: "Mystery Room",
     slug: "mystery-room",
-    type: "cultural",
+    type: "fun",
     image: `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/posters/mystery-room.png`,
     registerUrl: "https://docs.google.com/forms/d/e/1FAIpQLSevBL5-5s5uisLBTZr0x6E60-Xt3syJzjoOseYp0u5mL2GBtg/viewform?usp=publish-editor",
     rulebookUrl: "#",
@@ -1202,7 +1202,7 @@ export const EVENTS = [
   {
     name: "Step-it Up",
     slug: "step-it-up",
-    type: "cultural",
+    type: "fun",
     image: `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/posters/step-it-up.png`,
     registerUrl: "https://docs.google.com/forms/d/e/1FAIpQLSepldUbZQhgQgIGIqbuYuSj3MstknXxAuzZx7w-fv5wBHu5jQ/viewform?usp=dialog",
     rulebookUrl: "#",
@@ -1224,7 +1224,7 @@ export const EVENTS = [
   {
     name: "Scavenger Hunt",
     slug: "scavenger-hunt",
-    type: "cultural",
+    type: "fun",
     image: `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/posters/scavenger-hunt.png`,
     registerUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdEDBxiZjl2Rl4LCTpgLJ1bBfbpSLtmDMwL4xSka9NpMhWckg/viewform?usp=dialog",
     rulebookUrl: "#",
@@ -1246,7 +1246,7 @@ export const EVENTS = [
   {
     name: "Gully Cricket",
     slug: "gully-cricket",
-    type: "cultural",
+    type: "fun",
     image: `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/posters/gully-cricket.png`,
     registerUrl: "https://forms.gle/cvz4JPKAArUQhtqf7",
     rulebookUrl: "#",
@@ -1268,7 +1268,7 @@ export const EVENTS = [
   {
     name: "Dicey Dare",
     slug: "dicey-dare",
-    type: "cultural",
+    type: "fun",
     image: `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/posters/dicey-dare.png`,
     registerUrl: "https://forms.gle/rCwA8HzrxLhdSmpE7",
     rulebookUrl: "#",
@@ -1290,8 +1290,8 @@ export const EVENTS = [
   {
     name: "BlindFold",
     slug: "blindfold",
-    type: "cultural",
-    image: `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/posters/blindfold.png`,
+    type: "fun",
+    image: `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/posters/blind-fold.png`,
     registerUrl: "https://forms.gle/WsVtnaKLPJcFtHVW7",
     rulebookUrl: "#",
     venue: "Open Amphitheatre",
@@ -1312,7 +1312,7 @@ export const EVENTS = [
   {
     name: "Squid Game",
     slug: "squid-game",
-    type: "cultural",
+    type: "fun",
     image: `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/posters/squid-game.png`,
     registerUrl: "https://forms.gle/mHoML9FFwoWjMTBu6",
     rulebookUrl: "#",
@@ -1334,7 +1334,7 @@ export const EVENTS = [
   {
     name: "Guesstimate",
     slug: "guesstimate",
-    type: "cultural",
+    type: "fun",
     image: `${CMS_BASE}/f_auto,q_auto/v1/horizon2026/posters/guesstimate.png`,
     registerUrl: "https://forms.gle/aqQ2sF2D86MUXpV59",
     rulebookUrl: "#",

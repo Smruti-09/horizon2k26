@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
       </div>
       <div class="preloader-text">Loading Magic...</div>
+      <div class="preloader-text pc-notice" style="margin-top: 1rem; font-size: 0.65rem; color: #fff; opacity: 0.7;">Best Viewed on PC</div>
       <div class="jackpot-text">JACKPOT!!</div>
     `;
     document.body.appendChild(preloader);
