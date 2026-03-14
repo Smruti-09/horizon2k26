@@ -11,6 +11,7 @@ export default defineConfig({
         lineup: resolve(__dirname, "lineup.html"),
         project: resolve(__dirname, "project.html"),
         contact: resolve(__dirname, "contact.html"),
+        "event-info": resolve(__dirname, "event-info.html"),
       },
     },
     assetsInclude: [

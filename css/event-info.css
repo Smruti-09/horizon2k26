@@ -1,0 +1,210 @@
+/* ─── event info page ──────────────────────────── */
+
+/* hero */
+.ei-hero {
+  position: relative;
+  width: 100vw;
+  min-height: 58vh;
+  padding: 8em 2em 6em;
+  background-color: #b91c1c;
+  background-image: radial-gradient(
+    circle,
+    rgba(245, 215, 67, 0.55) 1.5px,
+    transparent 1.5px
+  );
+  background-size: 22px 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.75em;
+  overflow: hidden;
+}
+
+/* scalloped bottom tear edge */
+.ei-hero::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 3.5em;
+  background: var(--bg);
+  clip-path: ellipse(55% 100% at 50% 100%);
+  z-index: 2;
+}
+
+.ei-back {
+  position: absolute;
+  top: 7em;
+  left: 2em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  padding: 0.6em 1em;
+  background: rgba(20, 20, 20, 0.78);
+  border: 1.5px solid rgba(245, 215, 67, 0.45);
+  border-radius: 999px;
+  color: rgba(245, 215, 67, 0.9);
+  font-family: "supply-mono";
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  z-index: 150;
+  pointer-events: auto;
+  transition: opacity 0.2s;
+}
+.ei-back:hover { opacity: 0.65; }
+
+.ei-type {
+  display: inline-block;
+  width: fit-content;
+  background: #f5d743;
+  color: var(--fg);
+  padding: 0.25em 0.9em;
+  border-radius: 50px;
+  font-size: 0.72rem;
+  border: 1.5px solid rgba(20, 20, 20, 0.35);
+  z-index: 3;
+}
+
+.ei-hero-title h1 {
+  color: #fff;
+  font-size: clamp(3.5rem, 9vw, 8rem);
+  line-height: 0.92;
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
+  z-index: 3;
+  position: relative;
+}
+
+/* ─── body grid ─── */
+.ei-body {
+  padding: 4.5em 2em 6em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5em;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  align-items: stretch;
+}
+
+.ei-img-wrap {
+  display: flex;
+  border-radius: 1.5em;
+  overflow: hidden;
+  border: 0.22em solid var(--fg);
+  aspect-ratio: 5/3;
+  min-height: 28rem;
+}
+
+.ei-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ─── carnival ticket details panel ─── */
+.ei-details-panel {
+  background-color: var(--accent1);
+  background-image: radial-gradient(
+    circle,
+    rgba(245, 215, 67, 0.38) 1.5px,
+    transparent 1.5px
+  );
+  background-size: 20px 20px;
+  border: 0.22em solid var(--fg);
+  border-radius: 1.25em;
+  padding: 1.75em 1.5em 1.75em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.35em;
+  position: relative;
+  overflow: hidden;
+  min-height: 28rem;
+}
+
+.ei-details-panel::after {
+  content: "";
+  position: absolute;
+  left: 1.25em;
+  right: 1.25em;
+  top: 4.25em;
+  border-top: 2px dashed rgba(20, 20, 20, 0.28);
+}
+
+.ei-detail-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85em;
+}
+
+.ei-detail-icon {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  opacity: 0.6;
+  margin-top: 0.1em;
+}
+
+.ei-detail-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15em;
+}
+
+.ei-detail-label {
+  font-family: "supply-mono";
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.ei-detail-value {
+  font-family: "supply-mono";
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* ─── description ─── */
+.ei-description-section {
+  grid-column: 1 / -1;
+  border-top: 2px dashed rgba(20, 20, 20, 0.18);
+  padding-top: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65em;
+}
+
+.ei-desc-label {
+  opacity: 0.42;
+}
+
+.ei-description-section > p:last-child {
+  max-width: 720px;
+  opacity: 0.8;
+}
+
+/* ─── CTA buttons ─── */
+.ei-cta {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+/* ─── responsive ─── */
+@media (max-width: 1000px) {
+  .ei-body {
+    grid-template-columns: 1fr;
+    padding: 3.5em 1.25em 5em;
+    gap: 1.5em;
+  }
+  .ei-img-wrap,
+  .ei-details-panel {
+    min-height: auto;
+  }
+  .ei-description-section,
+  .ei-cta { grid-column: 1; }
+}

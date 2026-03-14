@@ -3,17 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lineup | Horizon 2026</title>
+    <title>Event | Horizon 2026</title>
     <link rel="icon" href="/images/global/site-icon.png" />
 
     <link rel="stylesheet" href="/css/transition.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
     <link rel="stylesheet" href="/css/globals.css" />
     <link rel="stylesheet" href="/css/menu.css" />
-    <link rel="stylesheet" href="/css/home.css" />
     <link rel="stylesheet" href="/css/work.css" />
     <link rel="stylesheet" href="/css/footer.css" />
-    <link rel="stylesheet" href="/css/lineup.css" />
+    <link rel="stylesheet" href="/css/event-info.css" />
   </head>
   <body>
     <!-- page transition -->
@@ -25,7 +24,7 @@
       <div class="transition-overlay overlay-5"></div>
     </div>
 
-    <div class="page lineup-page">
+    <div class="page event-info-page">
       <!-- nav -->
       <nav>
         <div class="logo">
@@ -89,87 +88,63 @@
         </div>
       </div>
 
-      <!-- lineup hero -->
-      <section class="lineup-hero">
-        <div class="lineup-hero-tag">
-          <p class="mn">✦ Horizon 2026 // Event Lineup</p>
+      <!-- event hero -->
+      <section class="ei-hero">
+        <a href="/lineup" class="ei-back" id="ei-back-link">&#8592; Back to Lineup</a>
+        <p class="mn ei-type" id="ei-type">—</p>
+        <div class="ei-hero-title">
+          <h1 id="ei-name">Loading&hellip;</h1>
         </div>
-        <div class="lineup-hero-title">
-          <h1>Pick Your</h1>
-          <h1>Arena</h1>
-        </div>
-        <p class="lineup-hero-sub">Spin the drum — choose a category — enter the event.</p>
       </section>
 
-      <!-- drum selector -->
-      <section class="lineup-selector-section">
+      <!-- event body -->
+      <div class="ei-body">
 
-        <div class="lineup-drum-wrapper">
+        <div class="ei-img-wrap">
+          <img id="ei-img" src="/images/work-items/work-item-1.jpg" alt="" />
+        </div>
 
-          <!-- decorative rivet corners -->
-          <span class="drum-rivet drum-rivet-tl"></span>
-          <span class="drum-rivet drum-rivet-tr"></span>
-          <span class="drum-rivet drum-rivet-bl"></span>
-          <span class="drum-rivet drum-rivet-br"></span>
+        <div class="ei-details-panel">
+          <div class="tec-tag">
+            <p class="mn" id="ei-type-tag">—</p>
+          </div>
 
-          <div class="drum-viewport">
-            <div class="drum-barrel" id="drum-barrel">
+          <div class="ei-detail-row">
+            <span class="ei-detail-icon">&#9678;</span>
+            <div class="ei-detail-text">
+              <span class="ei-detail-label">Venue</span>
+              <span class="ei-detail-value" id="ei-venue">TBA</span>
+            </div>
+          </div>
 
-              <div class="drum-face drum-face-0">
-                <span class="drum-face-icon">⚙</span>
-                <span class="drum-face-text">Technical Events</span>
-              </div>
+          <div class="ei-detail-row">
+            <span class="ei-detail-icon">&#9719;</span>
+            <div class="ei-detail-text">
+              <span class="ei-detail-label">Time</span>
+              <span class="ei-detail-value" id="ei-time">TBA</span>
+            </div>
+          </div>
 
-              <div class="drum-face drum-face-1">
-                <span class="drum-face-icon">🎯</span>
-                <span class="drum-face-text">Fun Events</span>
-              </div>
-
-              <div class="drum-face drum-face-2">
-                <span class="drum-face-icon">✒</span>
-                <span class="drum-face-text">Literary Events</span>
-              </div>
-
-              <div class="drum-face drum-face-3">
-                <span class="drum-face-icon">🎭</span>
-                <span class="drum-face-text">Cultural Events</span>
-              </div>
-
+          <div class="ei-detail-row">
+            <span class="ei-detail-icon">&#9672;</span>
+            <div class="ei-detail-text">
+              <span class="ei-detail-label">Day</span>
+              <span class="ei-detail-value" id="ei-day">TBA</span>
             </div>
           </div>
         </div>
 
-        <!-- category pills -->
-        <div class="lineup-cat-pills" id="lineup-cat-pills">
-          <button class="cat-pill cat-pill-0 active" data-index="0">Technical</button>
-          <button class="cat-pill cat-pill-1" data-index="1">Fun</button>
-          <button class="cat-pill cat-pill-2" data-index="2">Literary</button>
-          <button class="cat-pill cat-pill-3" data-index="3">Cultural</button>
+        <div class="ei-description-section">
+          <p class="mn ei-desc-label">About This Event</p>
+          <p id="ei-description">Loading event details&hellip;</p>
         </div>
 
-      </section>
+        <div class="ei-cta">
+          <a href="#" id="ei-register" class="event-btn event-btn-register">Register Now</a>
+          <a href="#" id="ei-rulebook" class="event-btn event-btn-rulebook">View Rulebook</a>
+        </div>
 
-      <!-- lineup tactical map -->
-      <section class="tactical-map-section lineup-tactical-section" id="lineup-tactical-section">
-        <div class="tactical-map-header">
-          <p class="mn">Tactical View // Venue Map</p>
-          <h2 id="lineup-tactical-title">Event Venues</h2>
-        </div>
-        <div class="tactical-map-wrapper">
-          <div class="tactical-map" id="lineup-tactical-map"></div>
-          <div class="tactical-event-card" id="lineup-tec-card">
-            <div class="tec-tag"><p class="mn" id="ltec-type">—</p></div>
-            <h3 id="ltec-name">Scroll to explore venues</h3>
-            <div class="tec-details">
-              <p class="mn"><span class="tec-icon">◎</span> <span id="ltec-venue">Venue</span></p>
-              <p class="mn"><span class="tec-icon">◷</span> <span id="ltec-time">Time</span></p>
-              <p class="mn"><span class="tec-icon">◈</span> <span id="ltec-day">Day</span></p>
-            </div>
-            <a href="#" class="mn ltec-link-btn" id="ltec-link">View Details →</a>
-            <p class="mn tec-count" id="ltec-count">— / —</p>
-          </div>
-        </div>
-      </section>
+      </div>
 
       <!-- footer -->
       <footer>
@@ -201,15 +176,9 @@
             </div>
             <div class="footer-col">
               <p>Social Signals</p>
-              <p>
-                <a href="https://www.youtube.com/@surya" target="_blank">YouTube</a>
-              </p>
-              <p>
-                <a href="#" target="_blank">Membership</a>
-              </p>
-              <p>
-                <a href="https://www.instagram.com/surya/" target="_blank">Instagram</a>
-              </p>
+              <p><a href="https://www.youtube.com/@surya" target="_blank">YouTube</a></p>
+              <p><a href="#" target="_blank">Membership</a></p>
+              <p><a href="https://www.instagram.com/surya/" target="_blank">Instagram</a></p>
             </div>
             <div class="footer-col">
               <p>Alt Dimensions</p>
@@ -234,6 +203,6 @@
     <script type="module" src="/js/lenis-scroll.js"></script>
     <script type="module" src="/js/menu.js"></script>
     <script type="module" src="/js/footer.js"></script>
-    <script type="module" src="/js/lineup.js"></script>
+    <script type="module" src="/js/event-info.js"></script>
   </body>
 </html>

@@ -6,6 +6,10 @@ export const EVENTS = [
     image: "/images/work-items/work-item-1.jpg",
     registerUrl: "#",
     rulebookUrl: "#",
+    venue: "Innovation Lab",
+    time: "9:00 AM",
+    day: "Day 1",
+    description: "A multi-round technical hackathon pitting your engineering skills against impossible deadlines and surprise constraints.",
   },
   {
     name: "Skull Pop 7",
@@ -14,6 +18,10 @@ export const EVENTS = [
     image: "/images/work-items/work-item-2.jpg",
     registerUrl: "#",
     rulebookUrl: "#",
+    venue: "Computer Centre",
+    time: "11:00 AM",
+    day: "Day 1",
+    description: "High-intensity coding duels where speed meets precision. Solve DSA problems before your rivals reach 7 pops.",
   },
   {
     name: "Room 404",
@@ -22,6 +30,10 @@ export const EVENTS = [
     image: "/images/work-items/work-item-3.jpg",
     registerUrl: "#",
     rulebookUrl: "#",
+    venue: "Open Amphitheatre",
+    time: "12:30 PM",
+    day: "Day 2",
+    description: "Mystery stations, escape-room logic, and team chaos in a fast-paced multi-point challenge.",
   },
   {
     name: "Red Dot Mission",
@@ -30,6 +42,10 @@ export const EVENTS = [
     image: "/images/work-items/work-item-4.jpg",
     registerUrl: "#",
     rulebookUrl: "#",
+    venue: "Central Lawn",
+    time: "2:00 PM",
+    day: "Day 2",
+    description: "An outdoor rapid-fire mission event — decode clues, sprint checkpoints, claim the dot.",
   },
   // literary events
   {
@@ -39,6 +55,10 @@ export const EVENTS = [
     image: "/images/work-items/work-item-5.jpg",
     registerUrl: "https://forms.gle/MSXMK9ByxoYvZaXn8",
     rulebookUrl: "#",
+    venue: "Seminar Hall A",
+    time: "9:00 AM",
+    day: "Day 1",
+    description: "A creative writing contest where your fate envelope holds the theme — reveal it, write it, own it.",
   },
   {
     name: "Trivia Trek",
@@ -47,6 +67,10 @@ export const EVENTS = [
     image: "/images/work-items/work-item-6.jpg",
     registerUrl: "https://forms.gle/q8L2ua5eW3LepkJi9",
     rulebookUrl: "#",
+    venue: "Seminar Hall B",
+    time: "10:30 AM",
+    day: "Day 1",
+    description: "Multi-stage knowledge quest spanning history, pop culture, science and surprise wildcards.",
   },
   {
     name: "Youth Parliament",
@@ -55,6 +79,10 @@ export const EVENTS = [
     image: "/images/work-items/work-item-6.jpg",
     registerUrl: "https://forms.gle/ko1LGKF87QcHXcUXA",
     rulebookUrl: "#",
+    venue: "Main Auditorium",
+    time: "11:00 AM",
+    day: "Day 2",
+    description: "Debate, deliberate and draft resolutions on real-world issues in a model parliament format.",
   },
   {
     name: "Identity Insights",
@@ -63,6 +91,10 @@ export const EVENTS = [
     image: "/images/work-items/work-item-5.jpg",
     registerUrl: "https://forms.gle/95i9kfEQe5jTY6WQ8",
     rulebookUrl: "#",
+    venue: "Seminar Hall A",
+    time: "2:00 PM",
+    day: "Day 2",
+    description: "Psychological and social scenario analysis — who are you really under pressure?",
   },
   {
     name: "Brainy Grid",
@@ -71,6 +103,10 @@ export const EVENTS = [
     image: "/images/work-items/work-item-5.jpg",
     registerUrl: " https://docs.google.com/forms/d/e/1FAIpQLSf23Zhn-3_6D1lxYLUi2ZcUXwlZ6H1ZmZay4iIki1q7vDj_Nw/viewform?usp=dialog",
     rulebookUrl: "#",
+    venue: "Computer Lab 1",
+    time: "10:00 AM",
+    day: "Day 1",
+    description: "Grid-based wordplay and logic puzzles that stretch both hemispheres simultaneously.",
   },
 {
     name: "Spell bee",
@@ -79,6 +115,10 @@ export const EVENTS = [
     image: "/images/work-items/work-item-6.jpg",
     registerUrl: "https://forms.gle/DbsWx74b3efq1jQWA",
     rulebookUrl: "#",
+    venue: "Seminar Hall B",
+    time: "9:30 AM",
+    day: "Day 3",
+    description: "The classic spelling challenge, Horizon edition — uncommon words, unusual origins, unforgiving judges.",
   },
   {
     name: "Debate",
@@ -87,6 +127,10 @@ export const EVENTS = [
     image: "/images/work-items/work-item-6.jpg",
     registerUrl: "https://forms.gle/x23xuTaaVYTKBC4Z7",
     rulebookUrl: "#",
+    venue: "Main Auditorium",
+    time: "10:00 AM",
+    day: "Day 2",
+    description: "Parliamentary debate format — sharp arguments, swift rebuttals, and the gavel of justice.",
   },
    {
     name: "Finger Dab",
@@ -95,6 +139,10 @@ export const EVENTS = [
     image: "/images/work-items/work-item-6.jpg",
     registerUrl: " https://forms.gle/kxgTpkanLaeBe86D6",
     rulebookUrl: "#",
+    venue: "Art Block",
+    time: "12:00 PM",
+    day: "Day 3",
+    description: "Finger-painting on a blank canvas — your story told in colour and form with zero digital tools.",
   },
   {
     name: "PPDT",
@@ -103,6 +151,10 @@ export const EVENTS = [
     image: "/images/work-items/work-item-6.jpg",
     registerUrl: "https://forms.gle/KdkM5spoVVaQC4Ln8",
     rulebookUrl: "#",
+    venue: "Seminar Hall A",
+    time: "11:00 AM",
+    day: "Day 3",
+    description: "Picture Perception and Discussion Test — describe, discuss, unify. Group cohesion under observation.",
   },
   {
     name: "Visual Verses",
@@ -111,6 +163,10 @@ export const EVENTS = [
     image: "/images/work-items/work-item-6.jpg",
     registerUrl: "https://forms.gle/cf7XsTCpfjBv4gpB9",
     rulebookUrl: "#",
+    venue: "Art Block",
+    time: "2:30 PM",
+    day: "Day 3",
+    description: "Illustrated poetry slam — pair your words with visuals to create a gallery-worthy spoken art piece.",
   },
   {
     name: "Naqaab",
@@ -119,6 +175,10 @@ export const EVENTS = [
     image: "/images/work-items/work-item-6.jpg",
     registerUrl: " https://forms.gle/n6fPLvueHpjH3tyr5",
     rulebookUrl: "#",
+    venue: "Open Amphitheatre",
+    time: "4:00 PM",
+    day: "Day 3",
+    description: "Mask-on roleplay where identity is fluid, stories collide and the best actor wins the reveal.",
   },
   //literary events end
   {
@@ -128,6 +188,10 @@ export const EVENTS = [
     image: "/images/work-items/work-item-7.jpg",
     registerUrl: "#",
     rulebookUrl: "#",
+    venue: "Main Stage",
+    time: "6:00 PM",
+    day: "Day 2",
+    description: "An intimate acoustic live performance showcase — unamplified voices, raw instruments, electric atmosphere.",
   },
   {
     name: "Cloud Valley Echo",
@@ -136,6 +200,10 @@ export const EVENTS = [
     image: "/images/work-items/work-item-8.jpg",
     registerUrl: "#",
     rulebookUrl: "#",
+    venue: "Open Amphitheatre",
+    time: "8:00 PM",
+    day: "Day 3",
+    description: "The closing night mega concert — bands, DJs, dancers, and the entire Horizon community united.",
   },
 ];
 

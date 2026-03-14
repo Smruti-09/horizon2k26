@@ -4,7 +4,9 @@
   "rewrites": [
     { "source": "/about", "destination": "/about.html" },
     { "source": "/events", "destination": "/events.html" },
+    { "source": "/lineup", "destination": "/lineup.html" },
     { "source": "/project", "destination": "/project.html" },
-    { "source": "/contact", "destination": "/contact.html" }
+    { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/event-info", "destination": "/event-info.html" }
   ]
 }

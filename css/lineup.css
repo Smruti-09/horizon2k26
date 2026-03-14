@@ -220,14 +220,46 @@
 .cat-pill-2.active { background: #9bc1bc; border-color: #9bc1bc; color: #141414; }
 .cat-pill-3.active { background: #5d576b; border-color: #5d576b; color: #edf1e8; }
 
-/* ─── events grid section ─── */
-.lineup-grid-section {
-  width: 100%;
+/* ─── lineup tactical section overrides ─── */
+.lineup-tactical-section .tactical-map::before {
+  content: "HORIZON 2026 // CATEGORY VENUES";
 }
 
-.lineup-grid-section .work-items {
-  margin-bottom: 0;
+.lineup-tactical-section {
+  padding-top: 1.5em;
 }
+
+.lineup-tactical-section .tactical-map-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+
+.lineup-tactical-section .tactical-map-header p.mn {
+  opacity: 0.45;
+  padding: 0;
+}
+
+.lineup-tactical-section .tactical-map-header h2 {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1;
+}
+
+.ltec-link-btn {
+  display: inline-block;
+  padding: 0.55em 1.4em;
+  background: var(--fg);
+  color: #f5d743;
+  border-radius: 50px;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  transition: opacity 0.2s;
+  cursor: pointer;
+  align-self: flex-start;
+}
+.ltec-link-btn:hover { opacity: 0.75; }
 
 /* ─── responsive ─── */
 @media (max-width: 1000px) {
