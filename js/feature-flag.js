@@ -5,7 +5,7 @@
 // Set to false → full website, /coming-soon redirects to /
 // ============================================
 
-const COMING_SOON_MODE = false;
+const COMING_SOON_MODE = true;
 
 (function () {
   const path = window.location.pathname.replace(/\/+$/, "") || "/";
