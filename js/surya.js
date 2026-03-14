@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   `;
   document.body.appendChild(fahh);
 
-  const sfx = new Audio("/audio/fahh-sfx.mp3");
+  const sfx = new Audio("/audio/faah-sfx.mpeg");
   sfx.volume = 0.5;
   sfx.play().catch(() => { });
 
