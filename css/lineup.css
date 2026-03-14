@@ -1,11 +1,16 @@
 /* ─── lineup page ──────────────────────────────── */
 
+.lineup-container {
+  width: min(1200px, calc(100vw - 4em));
+  margin: 0 auto;
+}
+
 /* hero */
 .lineup-hero {
   position: relative;
-  width: 100vw;
+  width: 100%;
   min-height: 55vh;
-  padding: 9em 2em 4em;
+  padding: 9em 0 4em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,8 +45,11 @@
 /* ─── drum selector section ─── */
 
 .lineup-selector-section {
-  width: 100vw;
-  padding: 0 2em 4em;
+  width: 100%;
+  padding: 0 0 4em;
+}
+
+.lineup-selector-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -263,6 +271,7 @@
 
 /* ─── responsive ─── */
 @media (max-width: 1000px) {
+  .lineup-container { width: calc(100vw - 2em); }
   .drum-face-text { font-size: clamp(1.6rem, 7vw, 2.8rem); }
   .lineup-cat-pills { gap: 0.5em; }
   .cat-pill { padding: 0.5em 1.2em; font-size: 0.72rem; }

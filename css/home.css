@@ -359,7 +359,7 @@
 .tactical-map-section {
   position: relative;
   width: 100vw;
-  height: 100svh;
+  min-height: 100svh;
   display: flex;
   flex-direction: column;
   background: var(--bg);
@@ -377,7 +377,7 @@
   display: flex;
   padding: 0 2em 2em;
   gap: 1.5em;
-  min-height: 0;
+  min-height: clamp(460px, 75svh, 860px);
 }
 
 .tactical-map {
@@ -571,6 +571,7 @@
     flex-direction: column;
     padding: 0 1em 1em;
     gap: 1em;
+    min-height: clamp(480px, 78svh, 960px);
   }
 
   .tactical-event-card {

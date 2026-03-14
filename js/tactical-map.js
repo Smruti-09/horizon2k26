@@ -23,6 +23,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const cardTime  = document.getElementById("tec-time");
   const cardType  = document.getElementById("tec-type");
   const cardCount = document.getElementById("tec-count");
+  const zones = section.querySelectorAll(".map-zone");
+
+  zones.forEach((zone) => {
+    const label = (zone.dataset.label || "").trim();
+    if (!label) return;
+    zone.style.minWidth = `${Math.ceil(label.length * 7.2) + 20}px`;
+  });
 
   // Build and inject pins
   const pins = TACTICAL_EVENTS.map((evt) => {
@@ -64,8 +71,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   ScrollTrigger.create({
     trigger: section,
-    start: "top 70%",
-    end: "bottom 35%",
+    start: "top bottom",
+    end: "bottom top",
     scrub: 0.6,
     onUpdate: (self) => {
       TACTICAL_EVENTS.forEach((_, i) => {

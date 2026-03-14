@@ -27,8 +27,15 @@ export function initLineupTactical(categoryKey) {
   const countEl = document.getElementById("ltec-count");
   const linkEl  = document.getElementById("ltec-link");
   const titleEl = document.getElementById("lineup-tactical-title");
+  const zones = section.querySelectorAll(".map-zone");
 
   if (!section || !mapEl) return;
+
+  zones.forEach((zone) => {
+    const label = (zone.dataset.label || "").trim();
+    if (!label) return;
+    zone.style.minWidth = `${Math.ceil(label.length * 7.2) + 20}px`;
+  });
 
   /* kill existing scroll trigger */
   if (activeST) { activeST.kill(); activeST = null; }
@@ -112,9 +119,8 @@ export function initLineupTactical(categoryKey) {
     ScrollTrigger.refresh();
     activeST = ScrollTrigger.create({
       trigger: section,
-      start: "top top",
-      end: `+=${window.innerHeight * (events.length + 1)}px`,
-      pin: true,
+      start: "top bottom",
+      end: "bottom top",
       scrub: 0.6,
       onUpdate: (self) => {
         events.forEach((_, i) => {

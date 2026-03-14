@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lineup | Horizon 2026</title>
+    <title>Where It Happens | Horizon 2026</title>
     <link rel="icon" href="/images/global/site-icon.png" />
 
     <link rel="stylesheet" href="/css/transition.css" />
@@ -50,7 +50,7 @@
             <p><a href="/events">Events</a></p>
           </div>
           <div class="nav-item active">
-            <p><a href="/lineup">Lineup</a></p>
+            <p><a href="/lineup">Where It Happens</a></p>
           </div>
           <div class="nav-item">
             <p><a href="/about">About</a></p>
@@ -91,20 +91,23 @@
 
       <!-- lineup hero -->
       <section class="lineup-hero">
-        <div class="lineup-hero-tag">
-          <p class="mn">✦ Horizon 2026 // Event Lineup</p>
+        <div class="lineup-container">
+          <div class="lineup-hero-tag">
+            <p class="mn">✦ Horizon 2026 // Where It Happens</p>
+          </div>
+          <div class="lineup-hero-title">
+            <h1>Pick Your</h1>
+            <h1>Arena</h1>
+          </div>
+          <p class="lineup-hero-sub">Spin the drum — choose a category — enter the event.</p>
         </div>
-        <div class="lineup-hero-title">
-          <h1>Pick Your</h1>
-          <h1>Arena</h1>
-        </div>
-        <p class="lineup-hero-sub">Spin the drum — choose a category — enter the event.</p>
       </section>
 
       <!-- drum selector -->
       <section class="lineup-selector-section">
+        <div class="lineup-container lineup-selector-container">
 
-        <div class="lineup-drum-wrapper">
+          <div class="lineup-drum-wrapper">
 
           <!-- decorative rivet corners -->
           <span class="drum-rivet drum-rivet-tl"></span>
@@ -137,36 +140,39 @@
 
             </div>
           </div>
-        </div>
+          </div>
 
-        <!-- category pills -->
-        <div class="lineup-cat-pills" id="lineup-cat-pills">
-          <button class="cat-pill cat-pill-0 active" data-index="0">Technical</button>
-          <button class="cat-pill cat-pill-1" data-index="1">Fun</button>
-          <button class="cat-pill cat-pill-2" data-index="2">Literary</button>
-          <button class="cat-pill cat-pill-3" data-index="3">Cultural</button>
+          <!-- category pills -->
+          <div class="lineup-cat-pills" id="lineup-cat-pills">
+            <button class="cat-pill cat-pill-0 active" data-index="0">Technical</button>
+            <button class="cat-pill cat-pill-1" data-index="1">Fun</button>
+            <button class="cat-pill cat-pill-2" data-index="2">Literary</button>
+            <button class="cat-pill cat-pill-3" data-index="3">Cultural</button>
+          </div>
         </div>
 
       </section>
 
       <!-- lineup tactical map -->
       <section class="tactical-map-section lineup-tactical-section" id="lineup-tactical-section">
-        <div class="tactical-map-header">
-          <p class="mn">Tactical View // Venue Map</p>
-          <h2 id="lineup-tactical-title">Event Venues</h2>
-        </div>
-        <div class="tactical-map-wrapper">
-          <div class="tactical-map" id="lineup-tactical-map"></div>
-          <div class="tactical-event-card" id="lineup-tec-card">
-            <div class="tec-tag"><p class="mn" id="ltec-type">—</p></div>
-            <h3 id="ltec-name">Scroll to explore venues</h3>
-            <div class="tec-details">
-              <p class="mn"><span class="tec-icon">◎</span> <span id="ltec-venue">Venue</span></p>
-              <p class="mn"><span class="tec-icon">◷</span> <span id="ltec-time">Time</span></p>
-              <p class="mn"><span class="tec-icon">◈</span> <span id="ltec-day">Day</span></p>
+        <div class="lineup-container">
+          <div class="tactical-map-header">
+            <p class="mn">Tactical View // Venue Map</p>
+            <h2 id="lineup-tactical-title">Event Venues</h2>
+          </div>
+          <div class="tactical-map-wrapper">
+            <div class="tactical-map" id="lineup-tactical-map"></div>
+            <div class="tactical-event-card" id="lineup-tec-card">
+              <div class="tec-tag"><p class="mn" id="ltec-type">—</p></div>
+              <h3 id="ltec-name">Scroll to explore venues</h3>
+              <div class="tec-details">
+                <p class="mn"><span class="tec-icon">◎</span> <span id="ltec-venue">Venue</span></p>
+                <p class="mn"><span class="tec-icon">◷</span> <span id="ltec-time">Time</span></p>
+                <p class="mn"><span class="tec-icon">◈</span> <span id="ltec-day">Day</span></p>
+              </div>
+              <a href="#" class="mn ltec-link-btn" id="ltec-link">View Details →</a>
+              <p class="mn tec-count" id="ltec-count">— / —</p>
             </div>
-            <a href="#" class="mn ltec-link-btn" id="ltec-link">View Details →</a>
-            <p class="mn tec-count" id="ltec-count">— / —</p>
           </div>
         </div>
       </section>
@@ -189,7 +195,7 @@
             <div class="footer-col">
               <p>Quick Jumps</p>
               <p><a href="/events">Events</a></p>
-              <p><a href="/lineup">Lineup</a></p>
+              <p><a href="/lineup">Where It Happens</a></p>
               <p><a href="/about">About</a></p>
               <p><a href="/contact">Contact</a></p>
             </div>
