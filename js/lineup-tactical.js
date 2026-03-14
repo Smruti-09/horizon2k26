@@ -119,9 +119,11 @@ export function initLineupTactical(categoryKey) {
     ScrollTrigger.refresh();
     activeST = ScrollTrigger.create({
       trigger: section,
-      start: "top bottom",
-      end: "bottom top",
-      scrub: 0.6,
+      start: "top top",
+      end: "+=200%",
+      pin: true,
+      pinSpacing: true,
+      scrub: 1.2,
       onUpdate: (self) => {
         events.forEach((_, i) => {
           if (self.progress >= i * step && gsap.getProperty(pins[i], "opacity") < 0.9) {

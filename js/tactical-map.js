@@ -72,8 +72,9 @@ document.addEventListener("DOMContentLoaded", () => {
   ScrollTrigger.create({
     trigger: section,
     start: "top top",
-    end: "+=200%",
+    end: "+=150%",
     pin: true,
+    pinSpacing: true,
     scrub: 1.2,
     onUpdate: (self) => {
       TACTICAL_EVENTS.forEach((_, i) => {
